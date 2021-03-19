@@ -1,0 +1,48 @@
+.container {
+    width: 100vw;
+    height: 60px;
+    background: #0E0E0E;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    position: fixed;
+    align-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.imgBox {
+    margin: 5px 10px 5px 5px;
+}
+
+.imgBox img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.navBox {
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s;
+}
+
+.navBox:hover {
+    background: #1B6FEC;
+}
+
+.active {
+    background: #1B6FEC;
+}
+
+.active:hover {
+    animation: none;
+}
