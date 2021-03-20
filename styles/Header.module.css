@@ -38,6 +38,7 @@
 
 .navBox:hover {
     background: #1B6FEC;
+    cursor: default;
 }
 
 
