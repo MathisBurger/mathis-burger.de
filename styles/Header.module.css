@@ -33,6 +33,7 @@
     line-height: 60px;
     font-family: 'Roboto', sans-serif;
     transition: .3s;
+    text-decoration: none;
 }
 
 .navBox:hover {
