@@ -1,0 +1,15 @@
+.bg {
+    background-image: url("../public/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(7px);
+    transform: scale(1.02);
+}
