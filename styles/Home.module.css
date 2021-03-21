@@ -71,7 +71,9 @@
     align-items: center;
     align-content: center;
     height: 50vh;
-    width: 60vw;
+    width: 50vw;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .textContainer h1 {
@@ -85,4 +87,5 @@
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
+    text-align: center;
 }
