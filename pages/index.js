@@ -7,8 +7,12 @@ export default function Home() {
       <Header active={"home"} />
       <div className={style.bg}>
           <div className={style.container}>
-              <div>
-                  text
+              <div className={style.textContainer}>
+                  <h1>Mathis Burger</h1>
+                  <p>
+                      Hi, I am Mathis Burger. A german Fullstack developer from germany.<br />
+
+                  </p>
               </div>
               <div className={style.profileBox}>
                 <div className={style.profilePictureBox} />
