@@ -10,6 +10,32 @@
     top: 0;
     left: 0;
     z-index: -1;
-    filter: blur(7px);
     transform: scale(1.02);
+}
+
+.container {
+    filter: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.profileBox {
+    width: 500px;
+    height: 500px;
+    background: #343434;
+    position: absolute;
+    right: 300px;
+}
+
+.profilePictureBox {
+    width: 500px;
+    height: 500px;
+    background-image: url("../public/me.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -50px -50px auto auto;
 }
