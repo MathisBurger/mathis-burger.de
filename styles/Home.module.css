@@ -22,12 +22,31 @@
     width: 100vw;
 }
 
+@keyframes ShowBox {
+   0% {
+       transform: scale(0.95);
+       box-shadow: none;
+       opacity: 0.5;
+   }
+    100% {
+        transform: scale(1);
+        box-shadow: 8px 8px 8px rgba(0,0,0,0.6);
+        opacity: 1;
+    }
+}
+
+
+
 .profileBox {
     width: 500px;
     height: 500px;
     background: #343434;
     position: absolute;
     right: 300px;
+    transform: scale(0.95);
+    animation-name: ShowBox;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .profilePictureBox {
@@ -38,6 +57,11 @@
     background-position: center;
     background-size: cover;
     margin: -50px -50px auto auto;
+    transform: scale(0.95);
+    animation-name: ShowBox;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
 }
 
 .textContainer {
