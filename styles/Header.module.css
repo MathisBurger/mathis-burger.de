@@ -64,14 +64,6 @@
     align-items: center;
 }
 
-.blockDisplay {
-    display: block;
-}
-
-.noneDisplay {
-    display: none;
-}
-
 @media only screen and (max-width: 680px) {
     .navBox {
         width: 50vw;
