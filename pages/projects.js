@@ -65,7 +65,7 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className={style.projectCard}>
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/ikea-name-generator")}>
                         <h2>IKEA name generator</h2>
                         <p>
                             This is a little fun project. It is a webapp, which generates

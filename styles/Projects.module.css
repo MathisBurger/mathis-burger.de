@@ -39,6 +39,7 @@
     transition: .3s;
     display: flex;
     flex-direction: column;
+    text-overflow: fade;
 }
 
 .projectCard:hover {
@@ -64,6 +65,7 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    margin: auto 1em auto 1em;
+    margin: auto 1em 2px 1em;
     gap: 1em;
+    position: relative;
 }
