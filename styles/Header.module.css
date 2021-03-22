@@ -49,3 +49,46 @@
 .active:hover {
     animation: none;
 }
+
+.dropdown {
+    display: none;
+    width: 60px;
+    height: 60px;
+    background: #1B6FEC;
+}
+
+.linkBox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.blockDisplay {
+    display: block;
+}
+
+.noneDisplay {
+    display: none;
+}
+
+@media only screen and (max-width: 680px) {
+    .navBox {
+        width: 50vw;
+        position: relative;
+        margin-left: 0;
+        background: white;
+        color: black;
+    }
+    .active {
+        color: white;
+        background: #1B6FEC;
+    }
+    .dropdown {
+        display: block;
+    }
+    .linkBox {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
