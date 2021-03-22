@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
            <title>Mathis Burger</title>
        </Head>
+
      </div>
       );
 }

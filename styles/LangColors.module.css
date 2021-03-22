@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.row p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.golangCircle {
+    background: #2b77d7;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.angularCircle {
+    background: #c40721;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.nextjsCircle {
+    background: #258a0f;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.rustCircle {
+    background: #947a5a;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.reactCircle {
+    background: #088794;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
