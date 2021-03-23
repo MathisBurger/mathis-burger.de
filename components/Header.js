@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import style from '../styles/Header.module.css';
 import Image from "next/image";
 import Link from "next/link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Header(props) {
 
@@ -18,7 +21,7 @@ export default function Header(props) {
                     height={50}
                 />
             </div>
-            <div className={style.dropdown} onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)} />
+            <FontAwesomeIcon className={style.dropdown} onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}  icon={faBars}/>
             <div className={style.linkBox}>
                 <Link href={"/"}>
                     <div
