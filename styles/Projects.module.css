@@ -69,3 +69,12 @@
     gap: 1em;
     position: relative;
 }
+
+@media only screen and (max-width: 680px) {
+    .projectBox {
+        width: 90%;
+    }
+    .projectCard {
+        width: 100%;
+    }
+}
