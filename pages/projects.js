@@ -77,6 +77,17 @@ export default function Projects() {
                     </div>
 
 
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/commander")}>
+                        <h2>Commander</h2>
+                        <p>
+                            A lightweight discordgo command handler with internal
+                            help command and not found messages.
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"golang"} />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
