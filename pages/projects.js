@@ -88,6 +88,17 @@ export default function Projects() {
                         </div>
                     </div>
 
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/AnalAsia")}>
+                        <h2>AnalAsia</h2>
+                        <p>
+                            An easy to use discord chat analytics bot.
+                            You can analyse some basic stuff.
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"golang"} />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
