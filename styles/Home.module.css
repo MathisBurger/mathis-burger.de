@@ -107,6 +107,7 @@
     .textContainer {
         margin: auto auto auto auto;
         width: 100vw;
+        overflow: scroll;
     }
     .textContainer p {
         width: 90vw;
