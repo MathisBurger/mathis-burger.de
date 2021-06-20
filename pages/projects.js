@@ -38,6 +38,29 @@ export default function Projects() {
                         </div>
                     </div>
 
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/PaintShare")}>
+                        <h2>PaintShare</h2>
+                        <p>
+                            A socialmedia platform to share self painted
+                            pictures and other media for creators.
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"rust"} />
+                            <LanguageElement language={"react"} />
+                        </div>
+                    </div>
+
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/sporty-leaderboards")}>
+                        <h2>sporty leaderboards</h2>
+                        <p>
+                            An open source workout monitoring system I made of me and
+                            my family, because we wanted to see our stats in comparison.
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"react"} />
+                            <LanguageElement language={"rust"} />
+                        </div>
+                    </div>
 
                     <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/SLF-Engine")}>
                         <h2>SLF-Engine</h2>
@@ -48,19 +71,6 @@ export default function Projects() {
                         </p>
                         <div className={style.langRow}>
                             <LanguageElement language={"nextjs"} />
-                            <LanguageElement language={"rust"} />
-                        </div>
-                    </div>
-
-
-                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/sporty-leaderboards")}>
-                        <h2>sporty leaderboards</h2>
-                        <p>
-                            An open source workout monitoring system I made of me and
-                            my family, because we wanted to see our stats in comparison.
-                        </p>
-                        <div className={style.langRow}>
-                            <LanguageElement language={"react"} />
                             <LanguageElement language={"rust"} />
                         </div>
                     </div>
