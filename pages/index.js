@@ -12,7 +12,7 @@ export default function Home() {
                   <p>
                       Hi, I am Mathis Burger. A german Fullstack developer.
                       I like to use languages like Rust, Go and Javascript (Typescript).
-                      I have a ton of different projects running. Most of them are on Github
+                      I have a ton of different projects running. Most of them are on Github.
                       Furthermore I love to gain knowledge about new frameworks and technologies.
                       Another point of interest of me is system-administration under linux based
                       operating systems. I am a big fan of devOps and docker.<br />
