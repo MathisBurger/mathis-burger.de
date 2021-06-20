@@ -1,12 +1,21 @@
-FROM node:14-alpine
+FROM node:14-alpine AS build
 
-WORKDIR /app
+WORKDIR /build
 
 COPY . .
 
-RUN npm ci
+RUN npm i
 RUN npm run build
+RUN npm run export
 
-EXPOSE 3000
+FROM node:14-alpine AS final
 
-CMD ["npm", "run", "start"]
+WORKDIR /app
+RUN mkdir static
+COPY --from=build ./build/out ./static
+
+RUN npm i -g serve
+
+EXPOSE 5000
+
+CMD ["serve", "-s", "static"]
