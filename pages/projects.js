@@ -50,6 +50,39 @@ export default function Projects() {
                         </div>
                     </div>
 
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/CustomMidiController")}>
+                        <h2>Custom MIDI Control</h2>
+                        <p>
+                            An C++ executable for the arduino, built
+                            for a custom MIDI lighting desk
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"c++"} />
+                        </div>
+                    </div>
+
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/MathOnWeb")}>
+                        <h2>Math On Web</h2>
+                        <p>
+                            A webapp built to automate complex
+                            math calculations aka. my homework ;)
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"svelte"} />
+                        </div>
+                    </div>
+
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/ChocolateCSS")}>
+                        <h2>ChocolateCSS</h2>
+                        <p>
+                            A SCSS library built for
+                            faster development of dark themes
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"scss"} />
+                        </div>
+                    </div>
+
                     <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/sporty-leaderboards")}>
                         <h2>sporty leaderboards</h2>
                         <p>
@@ -106,6 +139,18 @@ export default function Projects() {
                         </p>
                         <div className={style.langRow}>
                             <LanguageElement language={"golang"} />
+                        </div>
+                    </div>
+
+                    <div className={style.projectCard} onClick={() => redirectToGithub("https://github.com/MathisBurger/shorty")}>
+                        <h2>shorty</h2>
+                        <p>
+                            An not yet finished URL shortener
+                            built to learn svelte and elixir
+                        </p>
+                        <div className={style.langRow}>
+                            <LanguageElement language={"elixir"} />
+                            <LanguageElement language={"svelte"} />
                         </div>
                     </div>
 

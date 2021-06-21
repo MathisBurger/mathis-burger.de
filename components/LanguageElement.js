@@ -22,5 +22,13 @@ function switchData(lang) {
             return <><div className={style.rustCircle} /><p>Rust</p></>;
         case "react":
             return <><div className={style.reactCircle} /><p>React</p></>;
+        case "c++":
+            return <><div className={style.cppCircle} /><p>C++</p></>;
+        case "elixir":
+            return <><div className={style.elixirCircle} /><p>Elixir</p></>;
+        case "svelte":
+            return <><div className={style.svelteCircle} /><p>Svelte</p></>;
+        case "scss":
+            return <><div className={style.scssCircle} /><p>SCSS</p></>;
     }
 }

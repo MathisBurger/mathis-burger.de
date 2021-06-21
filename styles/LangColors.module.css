@@ -47,3 +47,31 @@
     height: 20px;
     border-radius: 50%;
 }
+
+.cppCircle {
+    background: #F34B7D;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.elixirCircle {
+    background: #6E4A7E;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.svelteCircle {
+    background: #FF3E00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.scssCircle {
+    background: #C85B91;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
