@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 .imgBox {
     margin: 5px 10px 5px 5px;
@@ -77,6 +78,7 @@
         margin-left: 0;
         background: white;
         color: black;
+        top: 40px;
     }
     .active {
         color: white;

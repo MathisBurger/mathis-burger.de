@@ -54,6 +54,13 @@ const Header = ({active}: HeaderProps) =>  {
                         Projects
                     </div>
                 </Link>
+                <Link href={"/blog"}>
+                    <div className={`${style.navBox} ${active === "blog" ? style.active: ''}`}
+                         style={dropdownShow}
+                    >
+                        Blog
+                    </div>
+                </Link>
             </div>
         </div>
     );
