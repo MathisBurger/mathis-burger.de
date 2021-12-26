@@ -3,7 +3,6 @@ import {useRouter} from "next/router";
 import Header from "../../components/Header";
 import style from "../../styles/Blogpost.module.css";
 import {BlogPost as BlogPostType, findByBlogID} from "../../components/BlogPosts";
-import {Head} from "next/document";
 
 /**
  * The page that renders a blog post from scaffold.
