@@ -43,7 +43,12 @@
     display: grid;
     grid-template-columns: 30% 70%;
     place-items: center;
+    transition: .3s;
 }
+.blogElement:hover {
+    box-shadow: 5px 5px 5px #262626;
+}
+
 .blogElement .image {
     max-height: 150px;
     width: auto;
