@@ -15,7 +15,7 @@ const BlogPage = () => {
             <div className={style.bg}>
                 <div className={style.container}>
                     <h1>Blog</h1>
-                    {BlogPosts.map((post) => (
+                    {BlogPosts.reverse().map((post) => (
                         <BlogCard post={post} />
                     ))}
                 </div>

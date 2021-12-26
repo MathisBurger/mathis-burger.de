@@ -2,5 +2,10 @@
     font-family: 'Roboto', sans-serif;
     text-wrap: normal;
     font-style: normal !important;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    align-self: flex-start;
+}
+.heading {
+    align-self: flex-start;
+    font-size: 2.5em !important;
 }
