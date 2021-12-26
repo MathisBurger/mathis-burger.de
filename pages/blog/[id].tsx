@@ -11,6 +11,9 @@ const BlogPost = () => {
     const router = useRouter();
     const {id} = router.query;
     const post = findByBlogID(parseInt(id as string, 10));
+    if (post === null) {
+        router.push("/blog").then();
+    }
     return (
         <>
             <Header active="blog" />
