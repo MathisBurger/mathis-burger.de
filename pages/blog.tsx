@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import style from "../styles/Blogpage.module.css";
 import BlogCard from "../components/BlogCard";
 import {BlogPosts} from "../components/BlogPosts";
+import {GetStaticProps} from "next";
 
 /**
  * Provides a page that lists all blog posts in the system.
@@ -23,5 +24,9 @@ const BlogPage = () => {
         </>
     )
 };
+
+export const getStaticProps: GetStaticProps = async context => {
+    return {props: {}};
+}
 
 export default BlogPage;

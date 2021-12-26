@@ -2,7 +2,8 @@ import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import Header from "../../components/Header";
 import style from "../../styles/Blogpost.module.css";
-import {BlogPost as BlogPostType, findByBlogID} from "../../components/BlogPosts";
+import {BlogPost as BlogPostType, BlogPosts, findByBlogID} from "../../components/BlogPosts";
+import {GetStaticPaths, GetStaticProps} from "next";
 
 /**
  * The page that renders a blog post from scaffold.
@@ -32,13 +33,21 @@ const BlogPost = () => {
     return <Header active="blog" />;
 };
 
-/**
- * Loads the initial props on page reload
- */
-BlogPost.getInitialProps = async (ctx) => {
-    const res = await fetch('https://api.github.com/repos/vercel/next.js')
-    const json = await res.json()
-    return { stars: json.stargazers_count }
+
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    const ids = [];
+    BlogPosts.forEach((post) => {
+        ids.push('' + post.blogID);
+    })
+    const paths = ids.map(id => ({
+        params: { id },
+    }));
+    return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async context => {
+    return {props: {}};
 }
 
 export default BlogPost;
