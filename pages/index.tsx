@@ -1,7 +1,11 @@
 import Header from "../components/Header";
 import style from '../styles/Home.module.css';
 
-export default function Home() {
+/**
+ * The index page that sows some general content of the page.
+ */
+const Home = () =>  {
+
   return (
     <div>
       <Header active={"home"} />
@@ -28,4 +32,6 @@ export default function Home() {
       </div>
     </div>
   )
-}
+};
+
+export default Home;

@@ -1,13 +1,30 @@
-import React, {useState} from 'react';
+import React, {CSSProperties, useState} from 'react';
 import style from '../styles/Header.module.css';
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 
+interface HeaderProps {
+    /**
+     * The active route in the header
+     */
+    active: string;
+}
 
-export default function Header(props) {
+/**
+ * The Header of page.
+ */
+const Header = ({active}: HeaderProps) =>  {
 
-    const [dropdownShow, setDropdownShow] = useState({display: 'block'});
+    const [dropdownShow, setDropdownShow] = useState<CSSProperties>({display: 'block'});
+
+    const setDropdownOpposite = (changer, state) => {
+        if (state.display === 'block') {
+            changer({display: 'none'});
+        } else {
+            changer({display: 'block'});
+        }
+    }
 
 
     return (
@@ -20,18 +37,18 @@ export default function Header(props) {
                     height={50}
                 />
             </div>
-            <FontAwesomeIcon className={style.dropdown} onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}  icon={faBars}/>
+            <FontAwesomeIcon className={style.dropdown} onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}  icon={faBars} />
             <div className={style.linkBox}>
                 <Link href={"/"}>
                     <div
-                        className={`${style.navBox} ${props.active === "home" ? style.active: ''}`}
+                        className={`${style.navBox} ${active === "home" ? style.active: ''}`}
                         style={dropdownShow}
                     >
                         Home
                     </div>
                 </Link>
                 <Link href={"/projects"}>
-                    <div className={`${style.navBox} ${props.active === "projects" ? style.active: ''}`}
+                    <div className={`${style.navBox} ${active === "projects" ? style.active: ''}`}
                          style={dropdownShow}
                     >
                         Projects
@@ -42,11 +59,5 @@ export default function Header(props) {
     );
 }
 
-function setDropdownOpposite(changer, state) {
-    if (state.display === 'block') {
-        changer({display: 'none'});
-    } else {
-        changer({display: 'block'});
-    }
-}
+export default Header;
 
