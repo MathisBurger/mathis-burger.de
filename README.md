@@ -2,6 +2,7 @@
     <h1>mathis-burger.de</h1>
 <hr>
 <strong>My personal website</strong>
+    <br>
 <img src="https://img.shields.io/github/checks-status/mathisburger/mathis-burger.de/main?style=for-the-badge" />
 <img src="https://img.shields.io/github/license/mathisburger/mathis-burger.de?style=for-the-badge" />
 <img src="https://img.shields.io/github/last-commit/mathisburger/mathis-burger.de?style=for-the-badge" />
