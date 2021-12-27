@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <h1>mathis-burger.de</h1>
+<hr>
+<strong>My personal website</strong>
+<img src="https://img.shields.io/github/checks-status/mathisburger/mathis-burger.de/main?style=for-the-badge" />
+<img src="https://img.shields.io/github/license/mathisburger/mathis-burger.de?style=for-the-badge" />
+<img src="https://img.shields.io/github/last-commit/mathisburger/mathis-burger.de?style=for-the-badge" />
+</div>
+<hr>
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" />    
+</div>
 
-## Getting Started
+# Project information
 
-First, run the development server:
+This is my personal website. It includes much information about me and my projects in general. It also has its own
+project portfolio, which shows the most important of my projects in a simple view. Furthermore, you have access to
+a blog, that I created with next.js. I decided to use this webapp and not a wordpress instance for example, because it
+is way easier to host for me, and I can design the blog like I want.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Blog
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The blog feature is a custom-built blogging API. I am able to add new blog entries by coding them. I have chosen this
+method, because it is much more customizable, and I have full control over my blog. Furthermore, I think it is another
+experience to code a blog instead of just writing it. Therefore, I decided to implement this easy blogging feature into
+my portfolio webapp.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Further development
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I definitely want to add more blog posts to my personal webpage. Therefore, the project will grow regular. But, if I have
+a nice idea I will add this as a new feature to my webpage. This project is timeless, because it represents my development
+as a software engineer. I will add every project I am working on to this repository. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Contributing
+It is useless to contribute to this project, because it represents my own portfolio. But if you want to write your own
+blog post on my blog, feel free to do so and create a pull request, so I can edit it a little bit and merge it into
+the current projects. Obviously, I will give you credits for that.
