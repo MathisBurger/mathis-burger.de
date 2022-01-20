@@ -13,6 +13,7 @@ export enum Language {
     scss,
     php,
     mui,
+    vue,
 }
 
 interface LanguageElementProps {
@@ -52,6 +53,8 @@ const  LanguageElement = ({language}: LanguageElementProps) =>  {
                 return <><div className={style.phpCircle} /><p>PHP</p></>;
             case Language.mui:
                 return <><div className={style.muiCircle} /><p>Material UI</p></>;
+            case Language.vue:
+                return <><div className={style.vueCircle} /><p>Vue.js</p></>;    
         }
     }
 
