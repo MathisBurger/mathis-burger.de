@@ -1,5 +1,7 @@
 import BlogPost01 from "./blogPosts/BlogPost01";
 import BlogPost02 from "./blogPosts/BlogPost02";
+import BlogPost03 from "./blogPosts/BlogPost03";
+
 
 export interface BlogPost {
     /**
@@ -45,6 +47,14 @@ export const BlogPosts: BlogPost[] = [
             "intuitive and superior framework for developers in 2022.",
         blogID: 2,
         contentComponent: BlogPost02(),
+    },
+    {
+        imageSrc: "https://vuejs.com/favicon.ico",
+        title: "My personal experience working with Vue.js",
+        description: "I used Vue.js as the frontend framework of my latest project SimpleInventory. " + 
+        "Now I want to share my experience on Vue.js with you. ",
+        blogID: 3,
+        contentComponent: BlogPost03()
     }
 ];
 
