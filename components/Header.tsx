@@ -11,6 +11,21 @@ interface HeaderProps {
     active: string;
 }
 
+interface HeaderElement {
+    /**
+     * The name of the route
+     */
+    name: string;
+    /**
+     * The label of the element
+     */
+    label: string;
+    /**
+     * The route of the element
+     */
+    link: string;
+}
+
 /**
  * The Header of page.
  */
@@ -26,6 +41,29 @@ const Header = ({active}: HeaderProps) =>  {
         }
     }
 
+    const listElements: HeaderElement[] = [
+        {
+            name: "home",
+            label: "Home",
+            link: "/"
+        },
+        {
+            name: "projects",
+            label: "Projects",
+            link: "/projects"
+        },
+        {
+            name: "equipment",
+            label: "Equipment",
+            link: "/equipment"
+        },
+        {
+            name: "blog",
+            label: "Blog",
+            link: "/blog"
+        },
+    ];
+
 
     return (
         <div className={style.container}>
@@ -39,28 +77,16 @@ const Header = ({active}: HeaderProps) =>  {
             </div>
             <FontAwesomeIcon className={style.dropdown} onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}  icon={faBars} />
             <div className={style.linkBox}>
-                <Link href={"/"}>
+                {listElements.map(element => (
+                    <Link href={element.link}>
                     <div
-                        className={`${style.navBox} ${active === "home" ? style.active: ''}`}
+                        className={`${style.navBox} ${active === element.name ? style.active: ''}`}
                         style={dropdownShow}
                     >
-                        Home
+                        {element.label}
                     </div>
                 </Link>
-                <Link href={"/projects"}>
-                    <div className={`${style.navBox} ${active === "projects" ? style.active: ''}`}
-                         style={dropdownShow}
-                    >
-                        Projects
-                    </div>
-                </Link>
-                <Link href={"/blog"}>
-                    <div className={`${style.navBox} ${active === "blog" ? style.active: ''}`}
-                         style={dropdownShow}
-                    >
-                        Blog
-                    </div>
-                </Link>
+                ))}
             </div>
         </div>
     );
