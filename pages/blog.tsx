@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import style from "../styles/Blogpage.module.css";
 import BlogCard from "../components/BlogCard";
-import {BlogPosts} from "../components/BlogPosts";
+import {getBlogPosts} from "../components/BlogPosts";
 import {GetStaticProps} from "next";
 
 /**
@@ -10,14 +10,15 @@ import {GetStaticProps} from "next";
  */
 const BlogPage = () => {
 
+
     return (
         <>
             <Header active={"blog"} />
             <div className={style.bg}>
                 <div className={style.container}>
                     <h1>Blog</h1>
-                    {BlogPosts.reverse().map((post) => (
-                        <BlogCard post={post} />
+                    {getBlogPosts().map((post) => (
+                        <BlogCard post={post} key={post.blogID} />
                     ))}
                 </div>
             </div>

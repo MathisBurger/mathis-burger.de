@@ -49,7 +49,7 @@ export const BlogPosts: BlogPost[] = [
         contentComponent: BlogPost02(),
     },
     {
-        imageSrc: "https://vuejs.com/favicon.ico",
+        imageSrc: "https://miro.medium.com/max/850/1*nq9cdMxtdhQ0ZGL8OuSCUQ.jpeg",
         title: "My personal experience working with Vue.js",
         description: "I used Vue.js as the frontend framework of my latest project SimpleInventory. " + 
         "Now I want to share my experience on Vue.js with you. ",
@@ -57,6 +57,26 @@ export const BlogPosts: BlogPost[] = [
         contentComponent: BlogPost03()
     }
 ];
+
+/**
+ * Sorts all blog posts by their ID. The latest blog post 
+ * is on array position one.
+ * 
+ * @returns All blog posts
+ */
+export const getBlogPosts = () => {
+    const initialPosts = BlogPosts;
+    for (let i=0; i<initialPosts.length; i++) {
+        for (let j=1; j<initialPosts.length -1; j++) {
+            if (initialPosts[j].blogID > initialPosts[j +1].blogID) {
+                const temp = initialPosts[j];
+                initialPosts[j] = initialPosts[j+1];
+                initialPosts[j+1] = temp;
+            }
+        }
+    }
+    return initialPosts.reverse();
+}
 
 /**
  * Searches for blog posts with the given blogID
