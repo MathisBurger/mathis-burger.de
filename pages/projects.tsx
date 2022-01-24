@@ -94,6 +94,12 @@ const Projects = () =>  {
             description: "A simple discord bot that responds to every discord message containing family"
         },
         {
+            url: "https://github.com/rednit-team/tinder.js",
+            languages: [Language.typescript],
+            name: "Tinder JS",
+            description: "I built a tinder API wrapper as a fun project as a contributor"
+        },
+        {
             url: "https://github.com/MathisBurger/ChocolateCSS",
             languages: [Language.scss],
             name: "ChocolateCSS",
@@ -112,17 +118,11 @@ const Projects = () =>  {
             description: "A simple webapp built for monitoring the number of vaccines and the people in a doctors office."
         },
         {
-            url: "https://github.com/MathisBurger/classbook",
-            languages: [Language.php, Language.react, Language.mui],
-            name: "Classbook",
-            description: "An enterprise digital classbook for schools with support of other important features."
-        },
-        {
             url: "https://github.com/MathisBurger/SimpleInventory",
             languages: [Language.php, Language.vue, Language.mui],
             name: "SimpleInventory",
             description: "Another modern lokking and super fast web inventory system for the personal and internal use."
-        }
+        },
     ]
     return (
         <>
