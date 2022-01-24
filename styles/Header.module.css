@@ -36,11 +36,28 @@
     transition: .3s;
     text-decoration: none;
     display: block;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #1B6FEC 50%, #0E0E0E 50%);
+    -webkit-transition: background-position .3s;
+    -moz-transition: background-position .3s;
+    transition: background-position .3s;
+    background-position: 0 -100%;
 }
 
 .navBox:hover {
-    background: #1B6FEC;
-    cursor: default;
+    background-position: 0 0;
+}
+
+@keyframes animateNavBoxHover {
+    0% {
+        background-image: #0E0E0E;
+    }
+    50% {
+        background-image: linear-gradient(to right, #1B6FEC, #0E0E0E);
+    }
+    100% {
+        background-image: #1B6FEC;
+    }
 }
 
 
