@@ -54,8 +54,13 @@ const Header = ({active}: HeaderProps) =>  {
         },
         {
             name: "equipment",
-            label: "Equipment",
+            label: "Gear",
             link: "/equipment"
+        },
+        {
+            name: "socials",
+            label: "Socials",
+            link: "/socials"
         },
         {
             name: "blog",
