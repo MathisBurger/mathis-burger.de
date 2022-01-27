@@ -75,7 +75,7 @@
 @media only screen and (max-width: 680px) {
     .blogElement {
         width: 95%;
-        height: 100px;
+        height: fit-content;
     }
     .blogElement .image {
         max-width: 95%;
