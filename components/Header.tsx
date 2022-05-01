@@ -53,11 +53,6 @@ const Header = ({active}: HeaderProps) =>  {
             link: "/projects"
         },
         {
-            name: "equipment",
-            label: "Gear",
-            link: "/equipment"
-        },
-        {
             name: "socials",
             label: "Socials",
             link: "/socials"
