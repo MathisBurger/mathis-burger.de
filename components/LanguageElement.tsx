@@ -15,6 +15,7 @@ export enum Language {
     mui,
     vue,
     typescript,
+    csharp,
 }
 
 interface LanguageElementProps {
@@ -55,9 +56,11 @@ const  LanguageElement = ({language}: LanguageElementProps) =>  {
             case Language.mui:
                 return <><div className={style.muiCircle} /><p>Material UI</p></>;
             case Language.vue:
-                return <><div className={style.vueCircle} /><p>Vue.js</p></>; 
+                return <><div className={style.vueCircle} /><p>Vue.js</p></>;
             case Language.typescript:
-                return <><div className={style.typescriptCircle} /><p>Typescript</p></>;        
+                return <><div className={style.typescriptCircle} /><p>Typescript</p></>;
+            case Language.csharp:
+                return <><div className={style.csharpCircle} /><p>C#</p></>;
         }
     }
 

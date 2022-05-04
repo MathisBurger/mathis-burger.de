@@ -123,6 +123,12 @@ const Projects = () =>  {
             name: "SimpleInventory",
             description: "Another modern lokking and super fast web inventory system for the personal and internal use."
         },
+        {
+            url: "https://github.com/MathisBurger/digify",
+            languages: [Language.csharp, Language.react, Language.mui],
+            name: "digify",
+            description: "An small open source classbook for the private use in schools"
+        },
     ]
     return (
         <>
@@ -138,7 +144,7 @@ const Projects = () =>  {
                             name={project.name}
                             description={project.description}
                             key={`project-${i}`}
-                        />    
+                        />
                     ))}
                 </div>
             </div>
