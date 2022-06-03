@@ -129,6 +129,12 @@ const Projects = () =>  {
             name: "digify",
             description: "An small open source classbook for the private use in schools"
         },
+        {
+            url: "https://github.com/MathisBurger/SoundboardServer",
+            languages: [Language.golang, Language.nextjs, Language.mui],
+            name: "digify",
+            description: "An small open source classbook for the private use in schools"
+        },
     ]
     return (
         <>
