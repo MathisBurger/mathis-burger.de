@@ -129,6 +129,12 @@ const Projects = () =>  {
             name: "digify",
             description: "An small open source classbook for the private use in schools"
         },
+        {
+            url: "https://github.com/MathisBurger/terminalToDo",
+            languages: [Language.rust],
+            name: "terminalToDo",
+            description: "A simple to-do app as an cli. Makes managing toDos for terminal addicted people much easier."
+        },
     ]
     return (
         <>
