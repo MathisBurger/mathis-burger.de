@@ -130,6 +130,12 @@ const Projects = () =>  {
             description: "An small open source classbook for the private use in schools"
         },
         {
+            url: "https://github.com/MathisBurger/SoundboardServer",
+            languages: [Language.golang, Language.nextjs, Language.mui],
+            name: "SoundboardServer",
+            description: "A web interface that plays sounds on the host device"
+        },
+        {
             url: "https://github.com/MathisBurger/terminalToDo",
             languages: [Language.rust],
             name: "terminalToDo",
