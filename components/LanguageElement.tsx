@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/LangColors.module.css";
+import style from "../styles/LangColors.module.scss";
 
 export enum Language {
     golang,

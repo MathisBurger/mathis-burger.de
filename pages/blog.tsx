@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import style from "../styles/Blogpage.module.css";
+import style from "../styles/Blogpage.module.scss";
 import BlogCard from "../components/BlogCard";
 import {getBlogPosts} from "../components/BlogPosts";
 import {GetStaticProps} from "next";

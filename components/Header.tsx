@@ -1,5 +1,5 @@
 import React, {CSSProperties, useState} from 'react';
-import style from '../styles/Header.module.css';
+import style from '../styles/Header.module.scss';
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";

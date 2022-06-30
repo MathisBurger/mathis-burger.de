@@ -1,4 +1,4 @@
-import style from "../styles/Projects.module.css";
+import style from "../styles/Projects.module.scss";
 import LanguageElement, {Language} from "./LanguageElement";
 import React from "react";
 

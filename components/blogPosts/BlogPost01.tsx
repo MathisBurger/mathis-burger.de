@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/post.style.module.css";
+import style from "../../styles/post.style.module.scss";
 
 const BlogPost01 = () => {
 

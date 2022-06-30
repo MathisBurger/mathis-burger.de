@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import SocialBox, { SocialBoxProps } from "../components/SocialBox";
-import style from "../styles/Socials.module.css";
+import style from "../styles/Socials.module.scss";
 
 
 const Socials = () => {

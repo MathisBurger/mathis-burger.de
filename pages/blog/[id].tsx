@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import Header from "../../components/Header";
-import style from "../../styles/Blogpost.module.css";
+import style from "../../styles/Blogpost.module.scss";
 import {BlogPost as BlogPostType, BlogPosts, findByBlogID} from "../../components/BlogPosts";
 import {GetStaticPaths, GetStaticProps} from "next";
 

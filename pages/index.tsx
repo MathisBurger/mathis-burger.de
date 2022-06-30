@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import style from '../styles/Home.module.css';
+import style from '../styles/Home.module.scss';
 import {useEffect, useState} from "react";
 import LoadingSpinner from "../components/LoadingSpinner";
 

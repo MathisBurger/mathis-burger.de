@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../styles/post.style.module.css";
+import style from "../../styles/post.style.module.scss";
 
 const BlogPost03 = () => {
     return (
@@ -9,7 +9,7 @@ const BlogPost03 = () => {
                 Because I am a web developer, I like to experience new technologies, especially on the web.
                 Therefore, I decided to try out Vue.js as my frontend in my next fullstack project.
                 I just took my basic symfony backend and hooked it up with a clean Vue.js instance on the web.
-                Normally, I am just using React as my web framework to go, but as I already said I like testing new 
+                Normally, I am just using React as my web framework to go, but as I already said I like testing new
                 frameworks on the web. Vue.js is one of the biggest web framework and I never worked with it since this
                 project. Maybe that is the reason why it seemed very strange and complicated at first.
             </p>
@@ -19,8 +19,8 @@ const BlogPost03 = () => {
                 looking frontends. Furthermore, you can also just use pure CSS or a compiled CSS language like SCSS.
                 I dedided to use the <a href="https://vuetifyjs.com">Vuetify</a> libary for Vue.js, which provides some
                 material design components out of the box as vue components. It is a bit confusing to use them if you used
-                the original <a href="https://mui.com">Material UI</a> for React before, because some names or props of 
-                components are different in both libaries. 
+                the original <a href="https://mui.com">Material UI</a> for React before, because some names or props of
+                components are different in both libaries.
             </p>
             <h1 className={style.heading}>Setting up with webpack and symfony</h1>
             <p className={style.paragraph}>

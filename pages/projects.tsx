@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import style from "../styles/Projects.module.css";
+import style from "../styles/Projects.module.scss";
 import ProjectCard from "../components/ProjectCard";
 import {Language} from "../components/LanguageElement";
 

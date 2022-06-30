@@ -1,8 +1,8 @@
-import style from "../styles/Socials.module.css";
+import style from "../styles/Socials.module.scss";
 
 export interface SocialBoxProps {
     /**
-     * The url that the box redirects to 
+     * The url that the box redirects to
      */
     url: string;
     /**
