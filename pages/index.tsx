@@ -1,10 +1,20 @@
 import Header from "../components/Header";
 import style from '../styles/Home.module.css';
+import {useEffect, useState} from "react";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 /**
  * The index page that sows some general content of the page.
  */
 const Home = () =>  {
+
+    const [mainText, setMainText] = useState<string>("");
+
+    useEffect(() => {
+        fetch('/mainText.txt')
+            .then(res => res.text())
+            .then(txt => setMainText(txt));
+    }, []);
 
   return (
     <div>
@@ -14,15 +24,7 @@ const Home = () =>  {
               <div className={style.textContainer}>
                   <h1>Mathis Burger</h1>
                   <p>
-                      Hi, I am Mathis Burger. A german Fullstack developer.
-                      I like to use languages like Rust, Go and Javascript (Typescript).
-                      I have a ton of different projects running. Most of them are on Github.
-                      Furthermore I love to gain knowledge about new frameworks and technologies.
-                      Another point of interest of me is system-administration under linux based
-                      operating systems. I am a big fan of devOps and docker.<br />
-                      I like to help other people to learn more about coding and tech. Therefore
-                      I am the owner of a very small youtube channel all around tech and coding.
-                      Furthermore I like to discuss problems and new technologies with other people.
+                      {mainText === "" ? <LoadingSpinner /> : mainText}
                   </p>
               </div>
               <div className={style.profileBox}>
