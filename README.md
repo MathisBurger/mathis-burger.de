@@ -30,9 +30,10 @@ my portfolio webapp.
 
 I definitely want to add more blog posts to my personal webpage. Therefore, the project will grow regular. But, if I have
 a nice idea I will add this as a new feature to my webpage. This project is timeless, because it represents my development
-as a software engineer. I will add every project I am working on to this repository. 
+as a software engineer. I will add every project I am working on to this repository.
 
 # Contributing
+
 It is useless to contribute to this project, because it represents my own portfolio. But if you want to write your own
 blog post on my blog, feel free to do so and create a pull request, so I can edit it a little bit and merge it into
 the current projects. Obviously, I will give you credits for that.
