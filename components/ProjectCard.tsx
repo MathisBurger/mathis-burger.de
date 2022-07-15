@@ -44,7 +44,7 @@ const ProjectCard = ({
       <p>{description}</p>
       <div className={style.langRow}>
         {languages.map((lang) => (
-          <LanguageElement language={lang} />
+          <LanguageElement language={lang} key={lang.toString()} />
         ))}
       </div>
     </div>

@@ -77,7 +77,7 @@ const Header = ({ active }: HeaderProps) => {
       />
       <div className={style.linkBox}>
         {listElements.map((element) => (
-          <Link href={element.link}>
+          <Link href={element.link} key={element.link}>
             <div
               className={`${style.navBox} ${
                 active === element.name ? style.active : ''

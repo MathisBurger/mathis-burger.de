@@ -29,7 +29,7 @@ const Socials = () => {
         <h1>Socials</h1>
         <div className={style.box}>
           {data.map((props) => (
-            <SocialBox {...props} />
+            <SocialBox {...props} key={props.url} />
           ))}
         </div>
       </div>
