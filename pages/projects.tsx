@@ -156,6 +156,13 @@ const Projects = () => {
       description:
         'A simple to-do app as an cli. Makes managing toDos for terminal addicted people much easier.',
     },
+    {
+      url: 'https://github.com/MathisBurger/rusty-cli',
+      languages: [Language.rust],
+      name: 'rusty-cli',
+      description:
+          'A cli library that makes developing CLIs faster. It is perfect for fast and scalable cli applications',
+    },
   ]
   return (
     <>
