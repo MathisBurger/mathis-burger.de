@@ -1,6 +1,6 @@
 .footerContainer {
   height: 50px;
-  background: rebeccapurple;
+  background: #232323;
   width: 100vw;
   position: fixed;
   left: 0;
@@ -8,4 +8,13 @@
   padding: 0;
   bottom: 0;
   z-index: 2;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 40% 60%;
+}
+.footerContainer p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  place-self: flex-start;
+  margin-left: 5%;
 }

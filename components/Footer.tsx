@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className={styles.footerContainer}>
-
+            <p>©2022 Mathis Burger</p>
         </footer>
     );
 
