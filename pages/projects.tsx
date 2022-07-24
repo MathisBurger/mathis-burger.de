@@ -3,6 +3,8 @@ import Header from '../components/Header'
 import style from '../styles/Projects.module.scss'
 import ProjectCard from '../components/ProjectCard'
 import { Language } from '../components/LanguageElement'
+import Footer from "../components/Footer";
+import Wrapper from "../components/Wrapper";
 
 type ProjectInfo = {
   /**
@@ -172,7 +174,7 @@ const Projects = () => {
     },
   ]
   return (
-    <>
+    <Wrapper>
       <Header active={'projects'} />
       <div className={style.container}>
         <h1>Projects</h1>
@@ -189,7 +191,8 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </>
+      <Footer />
+    </Wrapper>
   )
 }
 
