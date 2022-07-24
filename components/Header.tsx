@@ -58,11 +58,6 @@ const Header = ({ active }: HeaderProps) => {
       label: 'Socials',
       link: '/socials',
     },
-    {
-      name: 'blog',
-      label: 'Blog',
-      link: '/blog',
-    },
   ]
 
   return (
