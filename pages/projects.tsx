@@ -163,6 +163,13 @@ const Projects = () => {
       description:
           'A cli library that makes developing CLIs faster. It is perfect for fast and scalable cli applications',
     },
+    {
+      url: 'https://github.com/SoftwareTemplates/cli',
+      languages: [Language.golang],
+      name: 'softwareTemplates',
+      description:
+          'A simple cli tool for setting up your next project more quickly.',
+    },
   ]
   return (
     <>
