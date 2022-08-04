@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import style from '../styles/Projects.module.scss'
 import ProjectCard from '../components/ProjectCard'
-import { Language } from '../components/LanguageElement'
+import {Language} from '../components/LanguageElement'
 import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
 
@@ -171,6 +171,13 @@ const Projects = () => {
       name: 'softwareTemplates',
       description:
           'A simple cli tool for setting up your next project more quickly.',
+    },
+    {
+      url: 'https://github.com/MathisBurger/symfony-layla',
+      languages: [Language.php, Language.twig],
+      name: 'Symfony-Layla',
+      description:
+          'A fun symfony bundle, that plays the song layla in karaoke style',
     },
   ]
   return (

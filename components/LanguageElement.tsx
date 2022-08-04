@@ -16,6 +16,7 @@ export enum Language {
   vue,
   typescript,
   csharp,
+    twig,
 }
 
 interface LanguageElementProps {
@@ -130,6 +131,13 @@ const LanguageElement = ({ language }: LanguageElementProps) => {
             <p>C#</p>
           </>
         )
+        case Language.twig:
+            return (
+                <>
+                    <div className={style.twigCircle} />
+                    <p>Twig</p>
+                </>
+            )
     }
   }
 
