@@ -18,3 +18,21 @@
   place-self: flex-start;
   margin-left: 5%;
 }
+.extraLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  place-self: flex-end;
+  margin-right: 10%;
+}
+
+.extraLinks p {
+  color: #9d9d9d;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: .3s;
+}
+.extraLinks p:hover {
+  color: white;
+}
