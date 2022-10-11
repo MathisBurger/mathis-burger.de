@@ -17,6 +17,7 @@ export enum Language {
   typescript,
   csharp,
     twig,
+    docker
 }
 
 interface LanguageElementProps {
@@ -136,6 +137,13 @@ const LanguageElement = ({ language }: LanguageElementProps) => {
                 <>
                     <div className={style.twigCircle} />
                     <p>Twig</p>
+                </>
+            )
+        case Language.docker:
+            return (
+                <>
+                    <div className={style.dockerCircle} />
+                    <p>Docker</p>
                 </>
             )
     }

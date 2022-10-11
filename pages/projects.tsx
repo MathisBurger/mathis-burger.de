@@ -179,6 +179,27 @@ const Projects = () => {
       description:
           'A fun symfony bundle, that plays the song layla in karaoke style',
     },
+    {
+      url: 'https://github.com/MathisBurger/surrealdb.php',
+      languages: [Language.php],
+      name: 'surrealdb.php',
+      description:
+          'A database driver for the surrealdb written in php',
+    },
+    {
+      url: 'https://github.com/MathisBurger/surrealdb-docker-service',
+      languages: [Language.docker],
+      name: 'surrealdb-docker-service',
+      description:
+          'The base surrealdb docker image configured to run easily in github actions.',
+    },
+    {
+      url: 'https://github.com/MathisBurger/google-study-plan-generator',
+      languages: [Language.typescript, Language.nextjs],
+      name: 'google-study-plan-generator',
+      description:
+          'Generates your study plan in your google calendar',
+    },
   ]
   return (
     <Wrapper>
