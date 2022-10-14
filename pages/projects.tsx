@@ -200,6 +200,13 @@ const Projects = () => {
       description:
           'Generates your study plan in your google calendar',
     },
+    {
+      url: 'https://github.com/MathisBurger/time-dependent-quotes',
+      languages: [Language.rust],
+      name: 'time-dependent-quotes',
+      description:
+          'Application for proving time dependent quotes',
+    },
   ]
   return (
     <Wrapper>
