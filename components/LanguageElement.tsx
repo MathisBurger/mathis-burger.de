@@ -16,8 +16,9 @@ export enum Language {
   vue,
   typescript,
   csharp,
-    twig,
-    docker
+  twig,
+  docker,
+  kotlin
 }
 
 interface LanguageElementProps {
@@ -144,6 +145,13 @@ const LanguageElement = ({ language }: LanguageElementProps) => {
                 <>
                     <div className={style.dockerCircle} />
                     <p>Docker</p>
+                </>
+            )
+        case Language.kotlin:
+            return (
+                <>
+                    <div className={style.kotlinCircle} />
+                    <p>Kotlin</p>
                 </>
             )
     }

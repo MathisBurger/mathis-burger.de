@@ -207,6 +207,13 @@ const Projects = () => {
       description:
           'Application for proving time dependent quotes',
     },
+    {
+      url: 'https://github.com/MathisBurger/web-service-mock',
+      languages: [Language.kotlin],
+      name: 'web-service-mock',
+      description:
+          'Simulates simple web api responses and is configured with yaml',
+    },
   ]
   return (
     <Wrapper>
