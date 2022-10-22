@@ -214,6 +214,13 @@ const Projects = () => {
       description:
           'Simulates simple web api responses and is configured with yaml',
     },
+    {
+      url: 'https://github.com/MathisBurger/phpunit-stopwatch',
+      languages: [Language.php],
+      name: 'phpunit-stopwatch',
+      description:
+          'A php library that provides phpunit test cases for performance tests',
+    },
   ]
   return (
     <Wrapper>
