@@ -221,6 +221,13 @@ const Projects = () => {
       description:
           'A php library that provides phpunit test cases for performance tests',
     },
+    {
+      url: 'https://github.com/MathisBurger/abigrade-calculator',
+      languages: [Language.nextjs, Language.typescript],
+      name: 'abigrade-calculator',
+      description:
+          'Calculates the best possible Abitur-grade based on your results.',
+    },
   ]
   return (
     <Wrapper>
