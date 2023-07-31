@@ -1,16 +1,13 @@
 .bg {
-  background-image: url('../public/home-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  transform: scale(1.02);
+  background-color: #161616;
 }
 
 .container {
@@ -40,12 +37,13 @@
 .blogElement {
   width: 70%;
   height: 200px;
-  background: #444444;
+  background: #262626;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 30% 70%;
   place-items: center;
   transition: 0.3s;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 .blogElement:hover {
   filter: brightness(1.5);
