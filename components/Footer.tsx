@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className={styles.footerContainer}>
-            <p>©2022 Mathis Burger</p>
+            <p>©2023 Mathis Burger</p>
             <div className={styles.extraLinks}>
                 <Link href="/impressum">
                     <p>Impressum</p>
