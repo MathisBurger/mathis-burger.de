@@ -1,21 +1,21 @@
-import Header from '../components/Header'
-import style from '../styles/Home.module.scss'
-import { useEffect, useState } from 'react'
-import LoadingSpinner from '../components/LoadingSpinner'
-import Wrapper from "../components/Wrapper";
-import Footer from "../components/Footer";
+import Header from '../components/Header';
+import style from '../styles/Home.module.scss';
+import { useEffect, useState } from 'react';
+import LoadingSpinner from '../components/LoadingSpinner';
+import Wrapper from '../components/Wrapper';
+import Footer from '../components/Footer';
 
 /**
  * The index page that sows some general content of the page.
  */
 const Home = () => {
-  const [mainText, setMainText] = useState<string>('')
+  const [mainText, setMainText] = useState<string>('');
 
   useEffect(() => {
     fetch('/mainText.txt')
       .then((res) => res.text())
-      .then((txt) => setMainText(txt))
-  }, [])
+      .then((txt) => setMainText(txt));
+  }, []);
 
   return (
     <Wrapper>
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <Footer />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

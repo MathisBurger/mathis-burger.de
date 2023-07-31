@@ -1,29 +1,29 @@
-import BlogPost01 from './blogPosts/BlogPost01'
-import BlogPost02 from './blogPosts/BlogPost02'
-import BlogPost03 from './blogPosts/BlogPost03'
+import BlogPost01 from './blogPosts/BlogPost01';
+import BlogPost02 from './blogPosts/BlogPost02';
+import BlogPost03 from './blogPosts/BlogPost03';
 
 export interface BlogPost {
   /**
    * the src of the image
    */
-  imageSrc: string
+  imageSrc: string;
   /**
    * The title pf the blog post
    */
-  title: string
+  title: string;
   /**
    * The description of the blog post
    */
-  description: string
+  description: string;
   /**
    * The ID of the blog post
    */
-  blogID: number
+  blogID: number;
 
   /**
    * A component that contains the blog data
    */
-  contentComponent?: JSX.Element
+  contentComponent?: JSX.Element;
 }
 
 /**
@@ -59,7 +59,7 @@ export const BlogPosts: BlogPost[] = [
     blogID: 3,
     contentComponent: BlogPost03(),
   },
-]
+];
 
 /**
  * Sorts all blog posts by their ID. The latest blog post
@@ -68,18 +68,18 @@ export const BlogPosts: BlogPost[] = [
  * @returns All blog posts
  */
 export const getBlogPosts = () => {
-  const initialPosts = BlogPosts
+  const initialPosts = BlogPosts;
   for (let i = 0; i < initialPosts.length; i++) {
     for (let j = 1; j < initialPosts.length - 1; j++) {
       if (initialPosts[j].blogID > initialPosts[j + 1].blogID) {
-        const temp = initialPosts[j]
-        initialPosts[j] = initialPosts[j + 1]
-        initialPosts[j + 1] = temp
+        const temp = initialPosts[j];
+        initialPosts[j] = initialPosts[j + 1];
+        initialPosts[j + 1] = temp;
       }
     }
   }
-  return initialPosts.reverse()
-}
+  return initialPosts.reverse();
+};
 
 /**
  * Searches for blog posts with the given blogID
@@ -87,11 +87,11 @@ export const getBlogPosts = () => {
  * @param id The id of the searched blog post
  */
 export const findByBlogID = (id: number): BlogPost | null => {
-  let element: BlogPost | null = null
+  let element: BlogPost | null = null;
   BlogPosts.forEach((post) => {
     if (post.blogID === id) {
-      element = post
+      element = post;
     }
-  })
-  return element
-}
+  });
+  return element;
+};

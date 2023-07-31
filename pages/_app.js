@@ -1,6 +1,6 @@
-import '../styles/globals.scss'
-import Head from 'next/head'
-import React from 'react'
+import '../styles/globals.scss';
+import Head from 'next/head';
+import React from 'react';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/me.jpg" />
       </Head>
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

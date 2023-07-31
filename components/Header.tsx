@@ -1,29 +1,29 @@
-import React, { CSSProperties, useState } from 'react'
-import style from '../styles/Header.module.scss'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import React, { CSSProperties, useState } from 'react';
+import style from '../styles/Header.module.scss';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 interface HeaderProps {
   /**
    * The active route in the header
    */
-  active: string
+  active: string;
 }
 
 interface HeaderElement {
   /**
    * The name of the route
    */
-  name: string
+  name: string;
   /**
    * The label of the element
    */
-  label: string
+  label: string;
   /**
    * The route of the element
    */
-  link: string
+  link: string;
 }
 
 /**
@@ -32,15 +32,15 @@ interface HeaderElement {
 const Header = ({ active }: HeaderProps) => {
   const [dropdownShow, setDropdownShow] = useState<CSSProperties>({
     display: 'block',
-  })
+  });
 
   const setDropdownOpposite = (changer, state) => {
     if (state.display === 'block') {
-      changer({ display: 'none' })
+      changer({ display: 'none' });
     } else {
-      changer({ display: 'block' })
+      changer({ display: 'block' });
     }
-  }
+  };
 
   const listElements: HeaderElement[] = [
     {
@@ -63,7 +63,7 @@ const Header = ({ active }: HeaderProps) => {
       label: 'Blog',
       link: '/blog',
     },
-  ]
+  ];
 
   return (
     <div className={style.container}>
@@ -90,7 +90,7 @@ const Header = ({ active }: HeaderProps) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

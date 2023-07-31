@@ -1,24 +1,24 @@
-import style from '../styles/Projects.module.scss'
-import LanguageElement, { Language } from './LanguageElement'
-import React from 'react'
+import style from '../styles/Projects.module.scss';
+import LanguageElement, { Language } from './LanguageElement';
+import React from 'react';
 
 interface ProjectCardProps {
   /**
    * The url to the open source repository.
    */
-  githubUrl: string
+  githubUrl: string;
   /**
    * All languages and frameworks used in the project
    */
-  languages: Language[]
+  languages: Language[];
   /**
    * The project name
    */
-  name: string
+  name: string;
   /**
    * A short description of the project
    */
-  description: string
+  description: string;
 }
 
 /**
@@ -31,9 +31,9 @@ const ProjectCard = ({
   description,
 }: ProjectCardProps) => {
   const redirectToGithub = (url) => {
-    const win = window.open(url, '_blank')
-    win.focus()
-  }
+    const win = window.open(url, '_blank');
+    win.focus();
+  };
 
   return (
     <div
@@ -48,7 +48,7 @@ const ProjectCard = ({
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

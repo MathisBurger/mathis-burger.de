@@ -1,14 +1,14 @@
-import style from '../styles/Socials.module.scss'
+import style from '../styles/Socials.module.scss';
 
 export interface SocialBoxProps {
   /**
    * The url that the box redirects to
    */
-  url: string
+  url: string;
   /**
    * The url of the icon
    */
-  iconUrl: string
+  iconUrl: string;
 }
 
 /**
@@ -16,15 +16,15 @@ export interface SocialBoxProps {
  */
 const SocialBox = ({ url, iconUrl }: SocialBoxProps) => {
   const redirectUrl = (url) => {
-    const win = window.open(url, '_blank')
-    win.focus()
-  }
+    const win = window.open(url, '_blank');
+    win.focus();
+  };
 
   return (
     <div className={style.elementBox} onClick={() => redirectUrl(url)}>
       <img src={iconUrl} />
     </div>
-  )
-}
+  );
+};
 
-export default SocialBox
+export default SocialBox;
