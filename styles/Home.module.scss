@@ -1,5 +1,5 @@
 .bg {
-  background-image: url("../public/coding.jpg"), url("../public/grandma3.jpeg");
+  background-image: url('../public/coding.jpg'), url('../public/grandma3.jpeg');
   background-position: top left, bottom right;
   background-size: 55% 100%;
   background-repeat: no-repeat;
@@ -97,8 +97,6 @@
   position: relative;
 }
 
-
-
 @keyframes imageAnimation {
   0% {
     transform: scale(0.8);
@@ -120,11 +118,11 @@
   }
 }
 
-@media  only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .container .imageRow {
     overflow-y: unset;
   }
   .container .imageRow img {
-   height: 45px;
+    height: 45px;
   }
 }

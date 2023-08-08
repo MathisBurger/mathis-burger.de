@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import style from '../styles/Projects.module.scss';
 import ProjectCard from '../components/ProjectCard';
-import {Language} from '../components/LanguageElement';
+import { Language } from '../components/LanguageElement';
 import Footer from '../components/Footer';
 import Wrapper from '../components/Wrapper';
 
@@ -229,8 +229,8 @@ const Projects = () => {
       url: 'https://github.com/MathisBurger/grocy-rpi',
       languages: [Language.docker],
       name: 'grocy-rpi',
-      description: 'An docker image for grocy'
-    }
+      description: 'An docker image for grocy',
+    },
   ];
   return (
     <Wrapper>

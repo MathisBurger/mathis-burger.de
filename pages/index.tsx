@@ -21,19 +21,19 @@ const Home = () => {
     <Wrapper>
       <Header active={'home'} />
       <div className={style.bg} />
-        <div className={style.container}>
-            <div className={style.imageRow}>
-                <img src="/me.jpg" alt=""/>
-                <img src="/me2.JPG" alt=""/>
-                <img src="/me3.jpg" alt=""/>
-                <img src="/me4.jpeg" alt=""/>
-                <img src="/me5.jpg" alt=""/>
-                <img src="/me6.JPG" alt=""/>
-                <img src="/me7.jpg" alt=""/>
-            </div>
-            <h1>Mathis Burger</h1>
-            <p>{mainText === '' ? <LoadingSpinner /> : mainText}</p>
+      <div className={style.container}>
+        <div className={style.imageRow}>
+          <img src="/me.jpg" alt="" />
+          <img src="/me2.JPG" alt="" />
+          <img src="/me3.jpg" alt="" />
+          <img src="/me4.jpeg" alt="" />
+          <img src="/me5.jpg" alt="" />
+          <img src="/me6.JPG" alt="" />
+          <img src="/me7.jpg" alt="" />
         </div>
+        <h1>Mathis Burger</h1>
+        <p>{mainText === '' ? <LoadingSpinner /> : mainText}</p>
+      </div>
       <Footer />
     </Wrapper>
   );
