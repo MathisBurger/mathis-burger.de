@@ -1,5 +1,5 @@
-import React from 'react'
-import style from '../../styles/post.style.module.scss'
+import React from 'react';
+import style from '../../styles/post.style.module.scss';
 
 const BlogPost02 = () => {
   return (
@@ -151,7 +151,7 @@ const BlogPost02 = () => {
         Symfony!
       </p>
     </>
-  )
-}
+  );
+};
 
-export default BlogPost02
+export default BlogPost02;

@@ -27,7 +27,7 @@
 }
 
 .projectBox {
-  width: 60vw;
+  width: 80vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,11 +35,11 @@
 }
 
 .projectCard {
-  width: 40%;
+  width: 30%;
   min-height: 200px;
   height: fit-content;
   background: #262626;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px 10px 10px 10px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
   transition: 0.3s;

@@ -1,10 +1,10 @@
-import React from 'react'
-import style from '../styles/Blogpage.module.scss'
-import Link from 'next/link'
-import { BlogPost } from './BlogPosts'
+import React from 'react';
+import style from '../styles/Blogpage.module.scss';
+import Link from 'next/link';
+import { BlogPost } from './BlogPosts';
 
 export interface BlogCardProps {
-  post: BlogPost
+  post: BlogPost;
 }
 /**
  * A basic card that displays all data for the given blog entry.
@@ -20,7 +20,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
         </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

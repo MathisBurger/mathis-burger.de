@@ -1,5 +1,5 @@
-import React from 'react'
-import style from '../../styles/post.style.module.scss'
+import React from 'react';
+import style from '../../styles/post.style.module.scss';
 
 const BlogPost03 = () => {
   return (
@@ -65,7 +65,7 @@ const BlogPost03 = () => {
         I will go on using React as my main web framework.
       </p>
     </>
-  )
-}
+  );
+};
 
-export default BlogPost03
+export default BlogPost03;

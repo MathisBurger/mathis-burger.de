@@ -1,29 +1,29 @@
-import React from 'react'
-import Header from '../components/Header'
-import style from '../styles/Projects.module.scss'
-import ProjectCard from '../components/ProjectCard'
-import {Language} from '../components/LanguageElement'
-import Footer from "../components/Footer";
-import Wrapper from "../components/Wrapper";
+import React from 'react';
+import Header from '../components/Header';
+import style from '../styles/Projects.module.scss';
+import ProjectCard from '../components/ProjectCard';
+import { Language } from '../components/LanguageElement';
+import Footer from '../components/Footer';
+import Wrapper from '../components/Wrapper';
 
 type ProjectInfo = {
   /**
    * The URL to the refering github repository
    */
-  url: string
+  url: string;
   /**
    * All languages that are used in this project
    */
-  languages: Language[]
+  languages: Language[];
   /**
    * The name of the project
    */
-  name: string
+  name: string;
   /**
    * The description of the project
    */
-  description: string
-}
+  description: string;
+};
 
 const Projects = () => {
   const projects: ProjectInfo[] = [
@@ -163,72 +163,75 @@ const Projects = () => {
       languages: [Language.rust],
       name: 'rusty-cli',
       description:
-          'A cli library that makes developing CLIs faster. It is perfect for fast and scalable cli applications',
+        'A cli library that makes developing CLIs faster. It is perfect for fast and scalable cli applications',
     },
     {
       url: 'https://github.com/SoftwareTemplates/cli',
       languages: [Language.golang],
       name: 'softwareTemplates',
       description:
-          'A simple cli tool for setting up your next project more quickly.',
+        'A simple cli tool for setting up your next project more quickly.',
     },
     {
       url: 'https://github.com/MathisBurger/symfony-layla',
       languages: [Language.php, Language.twig],
       name: 'Symfony-Layla',
       description:
-          'A fun symfony bundle, that plays the song layla in karaoke style',
+        'A fun symfony bundle, that plays the song layla in karaoke style',
     },
     {
       url: 'https://github.com/MathisBurger/surrealdb.php',
       languages: [Language.php],
       name: 'surrealdb.php',
-      description:
-          'A database driver for the surrealdb written in php',
+      description: 'A database driver for the surrealdb written in php',
     },
     {
       url: 'https://github.com/MathisBurger/surrealdb-docker-service',
       languages: [Language.docker],
       name: 'surrealdb-docker-service',
       description:
-          'The base surrealdb docker image configured to run easily in github actions.',
+        'The base surrealdb docker image configured to run easily in github actions.',
     },
     {
       url: 'https://github.com/MathisBurger/google-study-plan-generator',
       languages: [Language.typescript, Language.nextjs],
       name: 'google-study-plan-generator',
-      description:
-          'Generates your study plan in your google calendar',
+      description: 'Generates your study plan in your google calendar',
     },
     {
       url: 'https://github.com/MathisBurger/time-dependent-quotes',
       languages: [Language.rust],
       name: 'time-dependent-quotes',
-      description:
-          'Application for proving time dependent quotes',
+      description: 'Application for proving time dependent quotes',
     },
     {
       url: 'https://github.com/MathisBurger/web-service-mock',
       languages: [Language.kotlin],
       name: 'web-service-mock',
       description:
-          'Simulates simple web api responses and is configured with yaml',
+        'Simulates simple web api responses and is configured with yaml',
     },
     {
       url: 'https://github.com/MathisBurger/phpunit-stopwatch',
       languages: [Language.php],
       name: 'phpunit-stopwatch',
       description:
-          'A php library that provides phpunit test cases for performance tests',
+        'A php library that provides phpunit test cases for performance tests',
     },
     {
       url: 'https://github.com/MathisBurger/abigrade-calculator',
       languages: [Language.nextjs, Language.typescript],
       name: 'abigrade-calculator',
       description:
-          'Calculates the best possible Abitur-grade based on your results.',
+        'Calculates the best possible Abitur-grade based on your results.',
     },
-  ]
+    {
+      url: 'https://github.com/MathisBurger/grocy-rpi',
+      languages: [Language.docker],
+      name: 'grocy-rpi',
+      description: 'An docker image for grocy',
+    },
+  ];
   return (
     <Wrapper>
       <Header active={'projects'} />
@@ -249,7 +252,7 @@ const Projects = () => {
       </div>
       <Footer />
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

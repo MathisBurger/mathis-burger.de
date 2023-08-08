@@ -1,8 +1,11 @@
 .bg {
-  background-image: url('../public/home-bg.jpg');
+  background-image: url('../public/coding.jpg'), url('../public/grandma3.jpeg');
+  background-position: top left, bottom right;
+  background-size: 55% 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -11,102 +14,115 @@
   left: 0;
   z-index: -1;
   transform: scale(1.02);
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
+  position: relative;
+  top: 15vh;
   width: 100vw;
 }
 
-@keyframes ShowBox {
+.container .imageRow {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow-y: clip;
+}
+.container .imageRow img {
+  height: 100%;
+  width: fit-content;
+  animation-fill-mode: forwards;
+  animation-name: imageAnimation;
+  animation-duration: 2s;
+  opacity: 0;
+}
+.container .imageRow img:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.container .imageRow img:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.container .imageRow img:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.container .imageRow img:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.container .imageRow img:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.container .imageRow img:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.container .imageRow img:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+.container h1 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  animation-fill-mode: forwards;
+  animation-name: textAnimation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+  top: 20px;
+  position: relative;
+}
+
+.container p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  width: 80%;
+  font-size: 1.5em;
+  animation-fill-mode: forwards;
+  animation-name: textAnimation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  opacity: 0;
+  top: 20px;
+  position: relative;
+}
+
+@keyframes imageAnimation {
   0% {
-    transform: scale(0.95);
-    box-shadow: none;
-    opacity: 0.5;
+    transform: scale(0.8);
+    opacity: 0;
   }
   100% {
+    opacity: 1;
     transform: scale(1);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+  }
+}
+@keyframes textAnimation {
+  0% {
+    top: 20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
     opacity: 1;
   }
 }
 
-.profileBox {
-  width: 500px;
-  height: 500px;
-  background: #343434;
-  transform: scale(0.95);
-  animation-name: ShowBox;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.profilePictureBox {
-  width: 500px;
-  height: 500px;
-  background-image: url('../public/me.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: -50px -50px auto auto;
-  transform: scale(0.95);
-  animation-name: ShowBox;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.3s;
-}
-
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  height: 50vh;
-  width: 50vw;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-.textContainer h1 {
-  color: white;
-  text-align: center;
-  font-size: 3em;
-  font-family: 'Roboto', sans-serif;
-}
-.textContainer p {
-  margin-top: 0;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-@media only screen and (max-width: 680px) {
-  .container {
-    flex-direction: column-reverse;
-    overflow: scroll;
+@media only screen and (max-width: 420px) {
+  .container .imageRow {
+    overflow-y: unset;
   }
-  .profileBox {
-    width: 100px;
-    height: 100px;
-    margin-top: 50%;
-    margin-bottom: 0;
-  }
-  .profilePictureBox {
-    width: 100px;
-    height: 100px;
-    margin: -20px -20px auto auto;
-  }
-  .textContainer {
-    margin: auto auto auto auto;
-    width: 100vw;
-    overflow: scroll;
-  }
-  .textContainer p {
-    width: 90vw;
+  .container .imageRow img {
+    height: 45px;
   }
 }
