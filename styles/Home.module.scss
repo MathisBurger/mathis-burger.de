@@ -119,3 +119,12 @@
     opacity: 1;
   }
 }
+
+@media  only screen and (max-width: 420px) {
+  .container .imageRow {
+    overflow-y: unset;
+  }
+  .container .imageRow img {
+   height: 45px;
+  }
+}

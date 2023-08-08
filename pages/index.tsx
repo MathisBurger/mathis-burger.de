@@ -25,11 +25,11 @@ const Home = () => {
             <div className={style.imageRow}>
                 <img src="/me.jpg" alt=""/>
                 <img src="/me2.JPG" alt=""/>
-                <img src="/instagram.png" alt=""/>
-                <img src="/twitter.png" alt=""/>
-                <img src="/github.png" alt=""/>
-                <img src="/linked-in.png" alt=""/>
-                <img src="/logo.jpg" alt=""/>
+                <img src="/me3.jpg" alt=""/>
+                <img src="/me4.jpeg" alt=""/>
+                <img src="/me5.jpg" alt=""/>
+                <img src="/me6.JPG" alt=""/>
+                <img src="/me7.jpg" alt=""/>
             </div>
             <h1>Mathis Burger</h1>
             <p>{mainText === '' ? <LoadingSpinner /> : mainText}</p>
