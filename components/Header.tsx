@@ -46,12 +46,14 @@ const Header = ({ active }: HeaderProps) => {
   }, []);
 
   const setDropdownOpposite = (changer, state) => {
-    if (state.display === 'block') {
-      changer({ display: 'none' });
-      localStorage.setItem('header-dropdown', JSON.stringify({ display: 'none' }));
-    } else {
-      changer({ display: 'block' });
-      localStorage.setItem('header-dropdown', JSON.stringify({ display: 'block' }));
+    if (document.body.clientWidth < 680) {
+      if (state.display === 'block') {
+        changer({ display: 'none' });
+        localStorage.setItem('header-dropdown', JSON.stringify({ display: 'none' }));
+      } else {
+        changer({ display: 'block' });
+        localStorage.setItem('header-dropdown', JSON.stringify({ display: 'block' }));
+      }
     }
   };
 
