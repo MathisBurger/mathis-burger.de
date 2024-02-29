@@ -14,14 +14,15 @@
   z-index: 1;
 }
 .imgBox {
-  margin: 5px 10px 5px 5px;
+  /*margin-left: 5px;
+  margin-top: 5px;*/
 }
 
 .imgBox img {
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   overflow: hidden;
+  display: none; /* Disable image */
 }
 
 .navBox {

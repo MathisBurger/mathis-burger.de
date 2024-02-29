@@ -15,8 +15,8 @@ const Impressum: NextPage = () => {
         <div />
 
         <p>Mathis Burger</p>
-        <p>Mühlenberg 27</p>
-        <p>25794 Pahlen</p>
+        <p>Friedrich-Ebert-Straße 37</p>
+        <p>85055 Ingolstadt</p>
         <div />
         <p>Kontakt:</p>
         <div />

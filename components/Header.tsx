@@ -68,7 +68,7 @@ const Header = ({ active }: HeaderProps) => {
   return (
     <div className={style.container}>
       <div className={style.imgBox}>
-        <img src="/logo.jpg" alt="Logo" width={50} height={50} />
+        <img src="/me4.jpeg" alt="Logo" width={50} height={50} />
       </div>
       <FontAwesomeIcon
         className={style.dropdown}
