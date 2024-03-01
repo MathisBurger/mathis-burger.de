@@ -14,7 +14,7 @@ const Timeline = ({ children }: TimeLineProps) => {
             <div className={timeline.timelineMiddle}>
               <div className={timeline.timelineCircle}></div>
             </div>
-            <div className="timeline-component timeline-content">{child}</div>
+            <div className={timeline.timelineContent}>{child}</div>
           </>
         ))}
       </div>
