@@ -5,7 +5,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
-import Image from "next/image";
+import IntImg from "../components/IntImg";
 
 /**
  * The index page that sows some general content of the page.
@@ -41,13 +41,13 @@ const Home = () => {
         className={`${style.container} ${noAnimation ? style.noAnimation : ''}`}
       >
         <div className={style.imageRow}>
-
-          <img src="/me2.JPG" alt="" />
-          <img src="/me3.jpg" alt="" />
-          <img src="/me4.jpeg" alt="" />
-          <img src="/me5.jpg" alt="" />
-          <img src="/me6.JPG" alt="" />
-          <img src="/me7.jpg" alt="" />
+          <IntImg src="/me.jpg" />
+          <IntImg src="/me2.JPG" />
+          <IntImg src="/me3.jpg" />
+          <IntImg src="/me4.jpeg" />
+          <IntImg src="/me5.jpg" />
+          <IntImg src="/me6.JPG" />
+          <IntImg src="/me7.jpg" />
         </div>
         <h1>Mathis Burger</h1>
         <p>{mainText === '' ? <LoadingSpinner /> : mainText}</p>

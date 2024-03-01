@@ -9,6 +9,7 @@ import {
 } from '../../components/BlogPosts';
 import {GetStaticPaths, GetStaticProps} from 'next';
 import useLocalStorage from '../../hooks/useLocalStorage';
+import IntImg from "../../components/IntImg";
 
 /**
  * The page that renders a blog post from scaffold.
@@ -40,7 +41,7 @@ const BlogPost = () => {
         <div
           className={`${style.container} ${theme === 'dark' ? style.dark : ''}`}
         >
-          <img src={post.imageSrc} alt="post-image" className={style.image} />
+          <IntImg src={post.imageSrc} className={style.image} />
           <button onClick={changeTheme}>Change Color Scheme</button>
           <h1>{post.title}</h1>
           <p>{post.description}</p>

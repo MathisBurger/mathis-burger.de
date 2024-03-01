@@ -2,6 +2,7 @@ import React from 'react';
 import style from '../styles/Blogpage.module.scss';
 import { BlogPost } from './BlogPosts';
 import {useRouter} from "next/navigation";
+import IntImg from "./IntImg";
 
 export interface BlogCardProps {
   post: BlogPost;
@@ -15,7 +16,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
 
   return (
       <div className={style.blogElement} onClick={() => router.push(`/blog/${post.blogID}`)}>
-        <img src={post.imageSrc} className={style.image} alt="blog-img" />
+        <IntImg src={post.imageSrc} className={style.image} />
         <div className={style.rightGrid}>
           <h2>{post.title}</h2>
           <p>{post.description}</p>

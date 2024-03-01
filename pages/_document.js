@@ -10,7 +10,6 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
                     rel="stylesheet"
                 />
-                <title>Mathis Burger - Personal Website</title>
                 <link rel="icon" href="/me.jpg" />
             </Head>
             <body>

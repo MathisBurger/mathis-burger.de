@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import style from '../styles/cv.module.scss';
 import Timeline from '../components/Timeline';
+import IntImg from "../components/IntImg";
 
 const CV = () => {
   return (
@@ -11,7 +12,7 @@ const CV = () => {
       <div className={style.container}>
         <h1>CV</h1>
         <div className={style.imgRow}>
-          <img src="/me2.JPG" alt="" />
+          <IntImg src="/me2.JPG" />
           <div className={style.dataRow}>
             <h2>Mathis Burger</h2>
             <div className={style.kv}>
@@ -25,7 +26,7 @@ const CV = () => {
 
             <h2>Experience</h2>
             <div className={style.kv}>
-              <img src="/experience/AUDI.png" alt="" />
+              <IntImg src="/experience/AUDI.png" />
               <Timeline>
                 <div className={`${style.dataRow} ${style.extended}`}>
                   <h3>Dual student</h3>
@@ -53,7 +54,7 @@ const CV = () => {
               </Timeline>
             </div>
             <div className={style.kv}>
-              <img src="/experience/NWS.avif" alt="" />
+              <IntImg src="/experience/NWS.avif" />
               <div className={`${style.dataRow}`}>
                 <h3>Fullstack Developer</h3>
                 <h5>NetzWerkstatt GmbH & Co. KG | Aug. 2021 - Sep. 2023</h5>
@@ -66,7 +67,7 @@ const CV = () => {
 
             <h2>Education</h2>
             <div className={style.kv}>
-              <img src="/education/thi.png" alt="" />
+              <IntImg src="/education/thi.png" />
               <div className={`${style.dataRow}`}>
                 <h3>Wirtschaftsinformatik (B.Sc.)</h3>
                 <h5>Technische Hochschule Ingolstadt | 2023 - 2027</h5>
@@ -78,7 +79,7 @@ const CV = () => {
               </div>
             </div>
             <div className={style.kv}>
-              <img src="/education/whg.png" alt="" />
+              <IntImg src="/education/whg.png" />
               <div className={`${style.dataRow}`}>
                 <h3>Abitur</h3>
                 <h5>Werner-Heisenberg-Gymnasium Heide | 2015 - 2023</h5>

@@ -1,4 +1,5 @@
 import style from '../styles/Socials.module.scss';
+import IntImg from "./IntImg";
 
 export interface SocialBoxProps {
   /**
@@ -22,7 +23,7 @@ const SocialBox = ({ url, iconUrl }: SocialBoxProps) => {
 
   return (
     <div className={style.elementBox} onClick={() => redirectUrl(url)}>
-      <img src={iconUrl} />
+      <IntImg src={iconUrl} />
     </div>
   );
 };
