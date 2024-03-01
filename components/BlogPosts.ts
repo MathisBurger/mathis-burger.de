@@ -68,17 +68,7 @@ export const BlogPosts: BlogPost[] = [
  * @returns All blog posts
  */
 export const getBlogPosts = () => {
-  const initialPosts = BlogPosts;
-  for (let i = 0; i < initialPosts.length; i++) {
-    for (let j = 1; j < initialPosts.length - 1; j++) {
-      if (initialPosts[j].blogID > initialPosts[j + 1].blogID) {
-        const temp = initialPosts[j];
-        initialPosts[j] = initialPosts[j + 1];
-        initialPosts[j + 1] = temp;
-      }
-    }
-  }
-  return initialPosts.reverse();
+  return BlogPosts.reverse();
 };
 
 /**

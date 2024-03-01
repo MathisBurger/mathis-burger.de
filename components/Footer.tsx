@@ -10,11 +10,12 @@ import Link from 'next/link';
  * @constructor
  */
 const Footer: React.FC = () => {
+
   return (
     <footer className={styles.footerContainer}>
       <p>©2024 Mathis Burger</p>
       <div className={styles.extraLinks}>
-        <Link href="/impressum">
+        <Link href="/impressum" style={{textDecoration: 'none'}}>
           <p>Impressum</p>
         </Link>
       </div>

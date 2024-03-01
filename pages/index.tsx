@@ -5,6 +5,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
+import Image from "next/image";
 
 /**
  * The index page that sows some general content of the page.
