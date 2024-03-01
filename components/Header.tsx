@@ -94,7 +94,7 @@ const Header = ({ active }: HeaderProps) => {
   return (
     <div className={style.container}>
       <div className={style.imgBox}>
-        <IntImg src="/me4.jpeg" />
+        <IntImg src="/me4.jpeg" width={60} height={60}/>
       </div>
       <FontAwesomeIcon
         className={style.dropdown}

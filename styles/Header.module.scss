@@ -14,8 +14,10 @@
   z-index: 1;
 }
 .imgBox {
-  /*margin-left: 5px;
-  margin-top: 5px;*/
+}
+
+.container svg {
+  width: fit-content !important;
 }
 
 .imgBox img {
@@ -33,7 +35,6 @@
   font-size: 30px;
   line-height: 60px;
   font-family: 'Roboto', sans-serif;
-  transition: 0.3s;
   text-decoration: none;
   display: block;
   background-size: 100% 200%;
