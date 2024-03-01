@@ -79,3 +79,34 @@
 .kv img {
   height: 8em !important;
 }
+
+@media screen and (min-width: 680px) and (max-width: 1050px) {
+  .kv {
+    grid-template-columns: 30% 70%;
+  }
+  .kv img {
+    height: 5em !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container .imgRow {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .container .imgRow img {
+    height: 258px;
+    width: 190px;
+  }
+  .kv {
+    display: block;
+    width: 100%;
+  }
+  .kv .dataRow {
+    width: 100%;
+  }
+  .kv img {
+    display: none;
+  }
+}
