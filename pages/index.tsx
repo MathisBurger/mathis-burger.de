@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
-import {getCookie, setCookie} from "typescript-cookie";
+import { getCookie, setCookie } from 'typescript-cookie';
 
 /**
  * The index page that sows some general content of the page.
@@ -14,9 +14,9 @@ const Home = () => {
 
   const [noAnimation, setNoAnimation] = useState<boolean>(false);
 
-    useEffect(() => {
-        setNoAnimation(getCookie('animate-index') === 'true');
-    }, []);
+  useEffect(() => {
+    setNoAnimation(getCookie('animate-index') === 'true');
+  }, []);
 
   useEffect(() => {
     fetch('/mainText.txt')
@@ -24,17 +24,21 @@ const Home = () => {
       .then((txt) => setMainText(txt));
   }, []);
 
-    useEffect(() => {
-        return () => {
-            setCookie('animate-index', true, {expires: new Date((new Date()).getTime() +(1000*10))});
-        }
-    }, []);
+  useEffect(() => {
+    return () => {
+      setCookie('animate-index', true, {
+        expires: new Date(new Date().getTime() + 1000 * 10),
+      });
+    };
+  }, []);
 
   return (
     <Wrapper>
       <Header active={'home'} />
       <div className={style.bg} />
-      <div className={`${style.container} ${noAnimation ? style.noAnimation : ''}`}>
+      <div
+        className={`${style.container} ${noAnimation ? style.noAnimation : ''}`}
+      >
         <div className={style.imageRow}>
           <img src="/me.jpg" alt="" />
           <img src="/me2.JPG" alt="" />

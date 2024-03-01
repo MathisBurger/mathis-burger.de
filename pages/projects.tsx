@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import style from '../styles/Projects.module.scss';
 import ProjectCard from '../components/ProjectCard';
-import {Language} from '../components/LanguageElement';
+import { Language } from '../components/LanguageElement';
 import Footer from '../components/Footer';
 import Wrapper from '../components/Wrapper';
 
@@ -235,38 +235,39 @@ const Projects = () => {
       url: 'https://github.com/MathisBurger/Immocalc',
       languages: [Language.swift],
       name: 'Immocalc',
-      description: 'Housing price analysis app'
+      description: 'Housing price analysis app',
     },
     {
       url: 'https://github.com/MathisBurger/SolarCalc',
       languages: [Language.swift],
       name: 'SolarCalc',
-      description: 'Solar price calculation app'
+      description: 'Solar price calculation app',
     },
     {
       url: 'https://github.com/MathisBurger/calculation-flow',
       languages: [Language.java],
       name: 'Calculation flow',
-      description: 'Calculation configuration application made for SSW'
+      description: 'Calculation configuration application made for SSW',
     },
     {
       url: 'https://github.com/MathisBurger/tankopedia',
       languages: [Language.java],
       name: 'Tankopedia',
-      description: 'GraphQL wrapper for World of Tanks API'
+      description: 'GraphQL wrapper for World of Tanks API',
     },
     {
       url: 'https://github.com/MathisBurger/budget',
       languages: [Language.rust],
       name: 'budget',
-      description: 'Simple CLI for creating budget reports for personal household'
+      description:
+        'Simple CLI for creating budget reports for personal household',
     },
     {
       url: 'https://github.com/MathisBurger/typespeed',
       languages: [Language.nextjs, Language.typescript],
       name: 'Typespeed',
-      description: 'Typespeed application for developers'
-    }
+      description: 'Typespeed application for developers',
+    },
   ];
   return (
     <Wrapper>
