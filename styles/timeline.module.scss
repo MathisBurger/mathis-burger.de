@@ -21,8 +21,7 @@
   justify-content: flex-start;
 }
 
-@supports (-webkit-appearance:none) {
-
+@supports (-webkit-appearance: none) {
   @media screen and (max-width: 947px) {
     .timeline {
       height: 500px !important;
