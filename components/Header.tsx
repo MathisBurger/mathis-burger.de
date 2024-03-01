@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
-import IntImg from "./IntImg";
+import IntImg from './IntImg';
 
 interface HeaderProps {
   /**
@@ -94,7 +94,7 @@ const Header = ({ active }: HeaderProps) => {
   return (
     <div className={style.container}>
       <div className={style.imgBox}>
-        <IntImg src="/me4.jpeg" width={60} height={60}/>
+        <IntImg src="/me4.jpeg" width={60} height={60} />
       </div>
       <FontAwesomeIcon
         className={style.dropdown}

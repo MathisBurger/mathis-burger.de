@@ -1,4 +1,4 @@
-import IntImg from "./IntImg";
+import IntImg from './IntImg';
 
 /**
  * The loading spinner is just a svg

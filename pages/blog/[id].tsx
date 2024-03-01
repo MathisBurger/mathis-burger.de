@@ -7,9 +7,9 @@ import {
   BlogPosts,
   findByBlogID,
 } from '../../components/BlogPosts';
-import {GetStaticPaths, GetStaticProps} from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import useLocalStorage from '../../hooks/useLocalStorage';
-import IntImg from "../../components/IntImg";
+import IntImg from '../../components/IntImg';
 
 /**
  * The page that renders a blog post from scaffold.

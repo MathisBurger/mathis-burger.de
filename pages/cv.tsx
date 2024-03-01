@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import style from '../styles/cv.module.scss';
 import Timeline from '../components/Timeline';
-import IntImg from "../components/IntImg";
+import IntImg from '../components/IntImg';
 
 const CV = () => {
   return (

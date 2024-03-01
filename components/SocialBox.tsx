@@ -1,5 +1,5 @@
 import style from '../styles/Socials.module.scss';
-import IntImg from "./IntImg";
+import IntImg from './IntImg';
 
 export interface SocialBoxProps {
   /**

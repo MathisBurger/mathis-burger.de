@@ -1,22 +1,21 @@
-import {ReactNode, useEffect, useState} from "react";
-import LoadingSpinner from "./LoadingSpinner";
+import { ReactNode, useEffect, useState } from 'react';
+import LoadingSpinner from './LoadingSpinner';
 
 interface ClientOnlyProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
-const ClientOnly = ({children}: ClientOnlyProps): JSX.Element => {
+const ClientOnly = ({ children }: ClientOnlyProps): JSX.Element => {
+  const [isClient, setIsClient] = useState<boolean>(false);
 
-    const [isClient, setIsClient] = useState<boolean>(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-    useEffect(() => {
-        setIsClient(true)
-    }, []);
-
-    if (!isClient) {
-        return <LoadingSpinner />;
-    }
-    return children as JSX.Element;
-}
+  if (!isClient) {
+    return <LoadingSpinner />;
+  }
+  return children as JSX.Element;
+};
 
 export default ClientOnly;
