@@ -20,7 +20,7 @@ export enum Language {
   docker,
   kotlin,
   swift,
-    java
+  java,
 }
 
 interface LanguageElementProps {
@@ -156,19 +156,19 @@ const LanguageElement = ({ language }: LanguageElementProps) => {
             <p>Kotlin</p>
           </>
         );
-     case Language.swift:
+      case Language.swift:
         return (
-            <>
-                <div className={style.swiftCircle} />
-                <p>Swift</p>
-            </>
+          <>
+            <div className={style.swiftCircle} />
+            <p>Swift</p>
+          </>
         );
-    case Language.java:
+      case Language.java:
         return (
-            <>
-                <div className={style.javaCircle} />
-                <p>Java</p>
-            </>
+          <>
+            <div className={style.javaCircle} />
+            <p>Java</p>
+          </>
         );
     }
   };

@@ -1,9 +1,9 @@
-import React, {CSSProperties, useEffect, useState} from 'react';
+import React, { CSSProperties, useEffect, useState } from 'react';
 import style from '../styles/Header.module.scss';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import {useRouter} from "next/router";
+import { useRouter } from 'next/router';
 
 interface HeaderProps {
   /**
@@ -31,7 +31,6 @@ interface HeaderElement {
  * The Header of page.
  */
 const Header = ({ active }: HeaderProps) => {
-
   const router = useRouter();
 
   const [dropdownShow, setDropdownShow] = useState<CSSProperties>({
@@ -49,10 +48,16 @@ const Header = ({ active }: HeaderProps) => {
     if (document.body.clientWidth < 680) {
       if (state.display === 'block') {
         changer({ display: 'none' });
-        localStorage.setItem('header-dropdown', JSON.stringify({ display: 'none' }));
+        localStorage.setItem(
+          'header-dropdown',
+          JSON.stringify({ display: 'none' }),
+        );
       } else {
         changer({ display: 'block' });
-        localStorage.setItem('header-dropdown', JSON.stringify({ display: 'block' }));
+        localStorage.setItem(
+          'header-dropdown',
+          JSON.stringify({ display: 'block' }),
+        );
       }
     }
   };
@@ -95,21 +100,25 @@ const Header = ({ active }: HeaderProps) => {
         onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}
         icon={faBars}
       />
-      <div className={`${style.linkBox} ${dropdownShow.display === 'block' ? style.openDropdown : ''}`}>
+      <div
+        className={`${style.linkBox} ${
+          dropdownShow.display === 'block' ? style.openDropdown : ''
+        }`}
+      >
         {listElements.map((element) => (
-            <div
-              className={`${style.navBox} ${
-                active === element.name ? style.active : ''
-              }`}
-              key={element.link}
-              style={dropdownShow}
-              onClick={() => {
-                setDropdownOpposite(setDropdownShow, dropdownShow);
-                router.push(element.link);
-              }}
-            >
-              {element.label}
-            </div>
+          <div
+            className={`${style.navBox} ${
+              active === element.name ? style.active : ''
+            }`}
+            key={element.link}
+            style={dropdownShow}
+            onClick={() => {
+              setDropdownOpposite(setDropdownShow, dropdownShow);
+              router.push(element.link);
+            }}
+          >
+            {element.label}
+          </div>
         ))}
       </div>
     </div>
