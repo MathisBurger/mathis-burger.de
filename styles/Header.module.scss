@@ -14,8 +14,10 @@
   z-index: 1;
 }
 .imgBox {
-  /*margin-left: 5px;
-  margin-top: 5px;*/
+}
+
+.container svg {
+  width: fit-content !important;
 }
 
 .imgBox img {
@@ -33,7 +35,6 @@
   font-size: 30px;
   line-height: 60px;
   font-family: 'Roboto', sans-serif;
-  transition: 0.3s;
   text-decoration: none;
   display: block;
   background-size: 100% 200%;
@@ -66,7 +67,7 @@
     margin-top: -100%;
   }
   to {
-    margin-top: 60px;
+    margin-top: 70px;
   }
 }
 
@@ -115,7 +116,7 @@
     background: white;
     color: black;
     position: relative;
-    top: 60px;
+    top: 85px;
   }
   .active {
     color: white;

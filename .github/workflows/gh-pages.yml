@@ -8,19 +8,14 @@ on:
 jobs:
   gh-pages:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14]
-
     steps:
       - uses: actions/checkout@v2
       - name: Install node
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18
       - run: npm i
       - run: npm run build
-      - run: npm run export
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
