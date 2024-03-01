@@ -33,7 +33,7 @@ const CV = () => {
                                     <h3>Dual student</h3>
                                     <h5>AUDI AG | Sep. 2023 - today</h5>
                                     <p>
-                                        Studying "Wirtschaftsinformatik" at the THI with some practical
+                                        Studying Wirtschaftsinformatik at the THI with some practical
                                         experience at the AUDI AG
                                     </p>
                                 </div>
