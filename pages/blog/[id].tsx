@@ -7,7 +7,7 @@ import {
   BlogPosts,
   findByBlogID,
 } from '../../components/BlogPosts';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import {GetStaticPaths, GetStaticProps} from 'next';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 /**
@@ -21,7 +21,7 @@ const BlogPost = () => {
 
   useEffect(() => {
     setPost(findByBlogID(parseInt(id as string, 10)));
-  }, []);
+  }, [id]);
 
   const changeTheme = () => setTheme(theme === 'white' ? 'dark' : 'white');
 

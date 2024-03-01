@@ -41,7 +41,7 @@ const Home = () => {
         className={`${style.container} ${noAnimation ? style.noAnimation : ''}`}
       >
         <div className={style.imageRow}>
-          <img src="/me.jpg" alt="" />
+
           <img src="/me2.JPG" alt="" />
           <img src="/me3.jpg" alt="" />
           <img src="/me4.jpeg" alt="" />
