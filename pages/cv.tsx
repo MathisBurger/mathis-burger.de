@@ -64,6 +64,26 @@ const CV = () => {
                                 </p>
                             </div>
                         </div>
+
+                        <h2>Education</h2>
+                        <div className={style.kv}>
+                            <img src="/education/thi.png" alt="" />
+                            <div className={`${style.dataRow}`}>
+                                <h3>Wirtschaftsinformatik (B.Sc.)</h3>
+                                <h5>Technische Hochschule Ingolstadt | 2023 - 2027</h5>
+                                <p>Application and information systems</p>
+                                <p>IT-Business processes / Software engineering / IT-Security</p>
+                                <p>IT-Management / IT-Controlling</p>
+                            </div>
+                        </div>
+                        <div className={style.kv}>
+                            <img src="/education/whg.png" alt="" />
+                            <div className={`${style.dataRow}`}>
+                                <h3>Abitur</h3>
+                                <h5>Werner-Heisenberg-Gymnasium Heide | 2015 - 2023</h5>
+                                <h5>Grade: 2.4</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
