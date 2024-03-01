@@ -19,6 +19,8 @@ export enum Language {
   twig,
   docker,
   kotlin,
+  swift,
+    java
 }
 
 interface LanguageElementProps {
@@ -153,6 +155,20 @@ const LanguageElement = ({ language }: LanguageElementProps) => {
             <div className={style.kotlinCircle} />
             <p>Kotlin</p>
           </>
+        );
+     case Language.swift:
+        return (
+            <>
+                <div className={style.swiftCircle} />
+                <p>Swift</p>
+            </>
+        );
+    case Language.java:
+        return (
+            <>
+                <div className={style.javaCircle} />
+                <p>Java</p>
+            </>
         );
     }
   };
