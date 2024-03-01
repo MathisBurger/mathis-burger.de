@@ -7,7 +7,7 @@ COPY . .
 RUN npm i
 RUN npm run build
 
-FROM node:14-alpine AS final
+FROM node:18-alpine AS final
 
 WORKDIR /app
 RUN mkdir static
