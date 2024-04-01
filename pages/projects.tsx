@@ -268,6 +268,12 @@ const Projects = () => {
       name: 'Typespeed',
       description: 'Typespeed application for developers',
     },
+    {
+      url: 'https://github.com/MathisBurger/immowealth',
+      languages: [Language.kotlin, Language.typescript],
+      name: 'Immowealth',
+      description: 'Real estate management application'
+    }
   ];
   return (
     <Wrapper>
