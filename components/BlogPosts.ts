@@ -41,7 +41,7 @@ export const BlogPosts: BlogPost[] = [
     description: 'The initial blog post',
     blogID: 1,
     contentComponent: BlogPost01(),
-    postedAt: "12/26/2021"
+    postedAt: '12/26/2021',
   },
   {
     imageSrc:
@@ -54,7 +54,7 @@ export const BlogPosts: BlogPost[] = [
       'intuitive and superior framework for developers in 2022.',
     blogID: 2,
     contentComponent: BlogPost02(),
-    postedAt: "12/26/2021"
+    postedAt: '12/26/2021',
   },
   {
     imageSrc: 'https://miro.medium.com/max/850/1*nq9cdMxtdhQ0ZGL8OuSCUQ.jpeg',
@@ -64,7 +64,7 @@ export const BlogPosts: BlogPost[] = [
       'Now I want to share my experience on Vue.js with you. ',
     blogID: 3,
     contentComponent: BlogPost03(),
-    postedAt: "01/20/2022"
+    postedAt: '01/20/2022',
   },
 ];
 
@@ -75,7 +75,7 @@ export const BlogPosts: BlogPost[] = [
  * @returns All blog posts
  */
 export const getBlogPosts = () => {
-  return BlogPosts.sort((a,b) => a.blogID < b.blogID ? 1 : -1);
+  return BlogPosts.sort((a, b) => (a.blogID < b.blogID ? 1 : -1));
 };
 
 /**

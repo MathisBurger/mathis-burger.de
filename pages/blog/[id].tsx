@@ -10,7 +10,7 @@ import {
 import { GetStaticPaths, GetStaticProps } from 'next';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import IntImg from '../../components/IntImg';
-import Footer from "../../components/Footer";
+import Footer from '../../components/Footer';
 
 /**
  * The page that renders a blog post from scaffold.

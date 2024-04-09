@@ -272,8 +272,8 @@ const Projects = () => {
       url: 'https://github.com/MathisBurger/immowealth',
       languages: [Language.kotlin, Language.typescript],
       name: 'Immowealth',
-      description: 'Real estate management application'
-    }
+      description: 'Real estate management application',
+    },
   ];
   return (
     <Wrapper>
