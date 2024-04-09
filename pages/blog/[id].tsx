@@ -10,6 +10,7 @@ import {
 import { GetStaticPaths, GetStaticProps } from 'next';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import IntImg from '../../components/IntImg';
+import Footer from "../../components/Footer";
 
 /**
  * The page that renders a blog post from scaffold.
@@ -45,8 +46,10 @@ const BlogPost = () => {
           <button onClick={changeTheme}>Change Color Scheme</button>
           <h1>{post.title}</h1>
           <p>{post.description}</p>
+          <p>Posted at: {post.postedAt}</p>
           {post.contentComponent}
         </div>
+        <Footer />
       </>
     );
   }
