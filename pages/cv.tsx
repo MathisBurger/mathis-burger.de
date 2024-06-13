@@ -56,7 +56,18 @@ const CV = () => {
             <div className={style.kv}>
               <IntImg src="/experience/NWS.avif" />
               <div className={`${style.dataRow}`}>
-                <h3>Fullstack Developer</h3>
+                <h3>Fullstack Software Engineer</h3>
+                <h5>NetzWerkstatt GmbH & Co. KG | Jun. 2024 - today</h5>
+                <p>
+                  Developing enterprise web applications with PHP, Symfony and
+                  React.
+                </p>
+              </div>
+            </div>
+            <div className={style.kv}>
+              <IntImg src="/experience/NWS.avif" />
+              <div className={`${style.dataRow}`}>
+                <h3>Fullstack Software Engineer</h3>
                 <h5>NetzWerkstatt GmbH & Co. KG | Aug. 2021 - Sep. 2023</h5>
                 <p>
                   Developing enterprise web applications with PHP, Symfony and
