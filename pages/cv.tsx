@@ -37,6 +37,14 @@ const CV = () => {
                   </p>
                 </div>
                 <div className={`${style.dataRow} ${style.extended}`}>
+                  <h3>Internship Baureihe Digitalisierung / E³ 1.2</h3>
+                  <h5>AUDI AG | Aug. 2024 - Sep. 2024</h5>
+                  <p>
+                    Helped with small tasks in controlling of E³ 1.2 architecture. Furthermore, I helped other people with
+                    questions regarding technical terms and tickets.
+                  </p>
+                </div>
+                <div className={`${style.dataRow} ${style.extended}`}>
                   <h3>Internship Baureihe SSP3xF / MQB</h3>
                   <h5>AUDI AG | Feb. 2024 - Mar. 2024</h5>
                   <p>
@@ -54,7 +62,7 @@ const CV = () => {
               </Timeline>
             </div>
             <div className={style.kv}>
-              <IntImg src="/experience/NWS.avif" />
+              <IntImg src="/experience/NWS.avif"/>
               <div className={`${style.dataRow}`}>
                 <h3>Fullstack Software Engineer</h3>
                 <h5>NetzWerkstatt GmbH & Co. KG | Jun. 2024 - today</h5>
