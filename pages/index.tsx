@@ -60,12 +60,14 @@ const Home = () => {
               <section className={`${style.section} ${style.first}`}>
                   <h2>About me</h2>
                   <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                      type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                      Hey, I am Mathis Burger, a german CS student and fullstack software engineer from Germany. I started programming back in 2019 during my time in school.
+                      This was also the first time I got in touch with computers. After that I started to get obsessed with this stuff and got really deep into coding. I really
+                      love the fields of cyber security and enterprise applications. Due to my deep interest into cars I am also very into
+                      V2X and in-car software. I also love to play around with event technology and everything that has to to with electronics. I love to
+                      make my live easier by automating certain tasks in my daily live. In Addition to that I really like to try out new trends and technologies in software development.
+                        <br />
+                      In my free time I love to have some fun with my friends or learn new things that are useful to my career and my overall life. I like the idea of getting every day a little bit
+                      better in what I am doing and therefore, I also take some time to learn new things and improve myself.
                   </p>
               </section>
               <section className={style.section}>
@@ -81,14 +83,28 @@ const Home = () => {
               </section>
               <section className={style.section}>
                   <h2>Tools I work with</h2>
-                  <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                      type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                  </p>
+                  <div className={style.tools}>
+                      <IntImg src="/tools/actions.svg" />
+                      <IntImg src="/tools/angular.svg" />
+                      <IntImg src="/tools/aws.svg" />
+                      <IntImg src="/tools/csharp.svg" />
+                      <IntImg src="/tools/docker.svg" />
+                      <IntImg src="/tools/dotnet.svg" />
+                      <IntImg src="/tools/gcloud.png" />
+                      <IntImg src="/tools/go.svg" />
+                      <IntImg src="/tools/jira.svg" />
+                      <IntImg src="/tools/kotlin.svg" />
+                      <IntImg src="/tools/linux.svg" />
+                      <IntImg src="/tools/mariadb.svg" />
+                      <IntImg src="/tools/php.png" />
+                      <IntImg src="/tools/postgres.svg" />
+                      <IntImg src="/tools/react.svg" />
+                      <IntImg src="/tools/rust.svg" />
+                      <IntImg src="/tools/swift.svg" />
+                      <IntImg src="/tools/symfony.svg" />
+                      <IntImg src="/tools/terraform.svg" />
+                      <IntImg src="/tools/typescript.svg" />
+                  </div>
               </section>
           </div>
           <Footer/>

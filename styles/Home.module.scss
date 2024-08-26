@@ -201,6 +201,20 @@
   padding-bottom: 10em;
 }
 
+.section .tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section .tools img {
+  width: 100px;
+  height: 100px;
+}
+
 .section.first {
   padding-top: 4em;
   margin-top: 15em;

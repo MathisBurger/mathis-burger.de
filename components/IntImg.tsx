@@ -12,7 +12,7 @@ const IntImg = ({ src, className, width, height }: InternalImageProps) => (
     src={src}
     alt=""
     width={width ?? 0}
-    height={width ?? 0}
+    height={height ?? 0}
     className={className}
   />
 );
