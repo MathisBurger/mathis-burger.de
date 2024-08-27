@@ -6,6 +6,7 @@ import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
 import IntImg from '../components/IntImg';
+import Link from "next/link";
 
 /**
  * The index page that sows some general content of the page.
@@ -73,12 +74,10 @@ const Home = () => {
               <section className={style.section}>
                   <h2>Work Experience</h2>
                   <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                      type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-                      also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                      the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                      If you are interested into my detailed career path, you can take a look at my <Link href="/cv">CV page</Link>.<br />
+                      At the page of 16 I got my first side job as a fullstack software engineer. I worked on some big projects using PHP and React.
+                      After I turned 18 I quitted this job and moved to Bavaria to participate in the dual studies program of the german car manufacturer Audi.
+                      After the first semester I started to work as a fullstack software engineer at the same company as before alongside to my studies in Business Information Systems.
                   </p>
               </section>
               <section className={style.section}>
