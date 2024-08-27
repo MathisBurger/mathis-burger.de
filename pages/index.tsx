@@ -90,13 +90,13 @@ const Home = () => {
                       <IntImg src="/tools/csharp.svg" />
                       <IntImg src="/tools/docker.svg" />
                       <IntImg src="/tools/dotnet.svg" />
-                      <IntImg src="/tools/gcloud.png" />
+                      <IntImg src="/tools/google-cloud.svg" />
                       <IntImg src="/tools/go.svg" />
                       <IntImg src="/tools/jira.svg" />
                       <IntImg src="/tools/kotlin.svg" />
                       <IntImg src="/tools/linux.svg" />
                       <IntImg src="/tools/mariadb.svg" />
-                      <IntImg src="/tools/php.png" />
+                      <IntImg src="/tools/php.svg" />
                       <IntImg src="/tools/postgres.svg" />
                       <IntImg src="/tools/react.svg" />
                       <IntImg src="/tools/rust.svg" />
@@ -104,6 +104,13 @@ const Home = () => {
                       <IntImg src="/tools/symfony.svg" />
                       <IntImg src="/tools/terraform.svg" />
                       <IntImg src="/tools/typescript.svg" />
+                      <IntImg src="/tools/svelte.svg" />
+                      <IntImg src="/tools/vue-js.svg" />
+                      <IntImg src="/tools/confluence.svg" />
+                      <IntImg src="/tools/gitlab.svg" />
+                      <IntImg src="/tools/mongodb-original.svg" />
+                      <IntImg src="/tools/redis-plain.svg" />
+                      <IntImg src="/tools/jetbrains-toolbox.svg" />
                   </div>
               </section>
           </div>
