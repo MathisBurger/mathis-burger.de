@@ -1,4 +1,4 @@
-Hi, I am Mathis Burger, a german dual Wirtschaftsinformatik student at AUDI AG and ex fullstack developer.
+Hi, I am Mathis Burger, a german dual Wirtschaftsinformatik (Business Information Systems) student at AUDI AG and fullstack developer.
 I love to use languages like Rust, Go and Javascript (Typescript), PHP and C# for my personal projects.
 I have a ton of different small projects running. Most of them are on GitHub.
 I do coding for fun not for living!
