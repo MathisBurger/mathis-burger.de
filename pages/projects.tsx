@@ -27,7 +27,7 @@ type ProjectInfo = {
 
 const Projects = () => {
   const projects: ProjectInfo[] = [
-    {
+    /*{
       url: 'https://github.com/MathisBurger/shorty',
       languages: [Language.elixir, Language.svelte],
       name: 'Shorty',
@@ -75,7 +75,7 @@ const Projects = () => {
       name: 'CustomMidiControl',
       description:
         'An C++ executable for the arduino, built for a custom MIDI lighting desk',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/PaintShare',
       languages: [Language.rust, Language.react],
@@ -97,7 +97,7 @@ const Projects = () => {
       description:
         'A partly multiplayer crypto-currency game. You can simulate trading currencies on an webapp.',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/dom-toretto',
       languages: [Language.golang],
       name: 'Dom Toretto',
@@ -116,7 +116,7 @@ const Projects = () => {
       languages: [Language.scss],
       name: 'ChocolateCSS',
       description: 'A SCSS library built for faster development of dark themes',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/MathOnWeb',
       languages: [Language.svelte],
@@ -124,13 +124,13 @@ const Projects = () => {
       description:
         'A webapp built to automate complex math calculations aka. my homework ;)',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/vaccinecounter',
       languages: [Language.php, Language.react, Language.scss],
       name: 'Vaccinecounter',
       description:
         'A simple webapp built for monitoring the number of vaccines and the people in a doctors office.',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/SimpleInventory',
       languages: [Language.php, Language.vue, Language.mui],
@@ -145,7 +145,7 @@ const Projects = () => {
       description:
         'An small open source classbook for the private use in schools',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/SoundboardServer',
       languages: [Language.golang, Language.nextjs, Language.mui],
       name: 'SoundboardServer',
@@ -164,7 +164,7 @@ const Projects = () => {
       name: 'rusty-cli',
       description:
         'A cli library that makes developing CLIs faster. It is perfect for fast and scalable cli applications',
-    },
+    },*/
     {
       url: 'https://github.com/SoftwareTemplates/cli',
       languages: [Language.golang],
@@ -172,14 +172,14 @@ const Projects = () => {
       description:
         'A simple cli tool for setting up your next project more quickly.',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/symfony-layla',
       languages: [Language.php, Language.twig],
       name: 'Symfony-Layla',
       description:
         'A fun symfony bundle, that plays the song layla in karaoke style',
-    },
-    {
+    },*/
+    /*{
       url: 'https://github.com/MathisBurger/surrealdb.php',
       languages: [Language.php],
       name: 'surrealdb.php',
@@ -197,13 +197,13 @@ const Projects = () => {
       languages: [Language.typescript, Language.nextjs],
       name: 'google-study-plan-generator',
       description: 'Generates your study plan in your google calendar',
-    },
-    {
+    },*/
+    /*{
       url: 'https://github.com/MathisBurger/time-dependent-quotes',
       languages: [Language.rust],
       name: 'time-dependent-quotes',
       description: 'Application for proving time dependent quotes',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/web-service-mock',
       languages: [Language.kotlin],
@@ -211,13 +211,13 @@ const Projects = () => {
       description:
         'Simulates simple web api responses and is configured with yaml',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/phpunit-stopwatch',
       languages: [Language.php],
       name: 'phpunit-stopwatch',
       description:
         'A php library that provides phpunit test cases for performance tests',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/abigrade-calculator',
       languages: [Language.nextjs, Language.typescript],
@@ -225,25 +225,25 @@ const Projects = () => {
       description:
         'Calculates the best possible Abitur-grade based on your results.',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/grocy-rpi',
       languages: [Language.docker],
       name: 'grocy-rpi',
       description: 'An docker image for grocy',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/Immocalc',
       languages: [Language.swift],
       name: 'Immocalc',
-      description: 'Housing price analysis app',
+      description: 'Simple housing price analysis app',
     },
     {
       url: 'https://github.com/MathisBurger/SolarCalc',
       languages: [Language.swift],
       name: 'SolarCalc',
-      description: 'Solar price calculation app',
+      description: 'Simple solar price calculation app',
     },
-    {
+    /*{
       url: 'https://github.com/MathisBurger/calculation-flow',
       languages: [Language.java],
       name: 'Calculation flow',
@@ -267,12 +267,18 @@ const Projects = () => {
       languages: [Language.nextjs, Language.typescript],
       name: 'Typespeed',
       description: 'Typespeed application for developers',
-    },
+    },*/
     {
       url: 'https://github.com/MathisBurger/immowealth',
       languages: [Language.kotlin, Language.typescript],
       name: 'Immowealth',
       description: 'Real estate management application',
+    },
+    {
+      url: 'https://github.com/MathisBurger/CodeCanvas',
+      languages: [Language.rust, Language.typescript],
+      name: 'Immowealth',
+      description: 'A platform to learn how to code',
     },
   ];
   return (
