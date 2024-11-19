@@ -277,7 +277,7 @@ const Projects = () => {
     {
       url: 'https://github.com/MathisBurger/CodeCanvas',
       languages: [Language.rust, Language.typescript],
-      name: 'Immowealth',
+      name: 'CodeCanvas',
       description: 'A platform to learn how to code',
     },
   ];
