@@ -1,6 +1,8 @@
+$containerHeight: 60px;
+$navboxHeight: 60px;
 .container {
   width: 100vw;
-  height: 60px;
+  height: $containerHeight;
   background: #0e0e0e;
   display: flex;
   flex-direction: row;
@@ -13,29 +15,20 @@
   right: 0;
   z-index: 1;
 }
-.imgBox {
-}
-
 .container svg {
   width: 45px !important;
   height: 45px !important;
   padding: 2px;
 }
 
-.imgBox img {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  display: none; /* Disable image */
-}
 
 .navBox {
   width: 150px;
-  height: 60px;
+  height: $navboxHeight;
   text-align: center;
   color: white;
   font-size: 30px;
-  line-height: 60px;
+  line-height: $navboxHeight;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   display: block;
@@ -66,10 +59,10 @@
 
 @keyframes dropdownAnimation {
   from {
-    margin-top: -100%;
+    margin-left: -100%;
   }
   to {
-    margin-top: 70px;
+    margin-left: 0;
   }
 }
 
@@ -105,20 +98,18 @@
   .openDropdown {
     animation-name: dropdownAnimation;
     animation-fill-mode: forwards;
-    animation-duration: 1s;
-  }
-  .closeDropdown {
-    animation-name: dropdownAnimation;
-    animation-fill-mode: backwards;
-    animation-duration: 1s;
+    animation-duration: .5s;
   }
   .navBox {
-    width: calc(100vw - 56px);
+    width: 25vw;
     margin-left: 0;
-    background: white;
-    color: black;
+    background: #0e0e0e;
+
+    font-size: 1.2em;
+    color: white;
     position: relative;
-    top: 85px;
+    height: 40px;
+    line-height: 40px
   }
   .active {
     color: white;
@@ -129,6 +120,10 @@
   }
   .linkBox {
     flex-direction: column;
-    margin-top: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    background: #0e0e0e;
   }
 }

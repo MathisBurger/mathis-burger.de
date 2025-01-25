@@ -1,11 +1,8 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import style from '../styles/Header.module.scss';
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
-import IntImg from './IntImg';
-
 interface HeaderProps {
   /**
    * The active route in the header
@@ -34,34 +31,13 @@ interface HeaderElement {
 const Header = ({ active }: HeaderProps) => {
   const router = useRouter();
 
-  const [dropdownShow, setDropdownShow] = useState<CSSProperties>({
-    display: 'block',
-  });
+  const [navOpen, setNavOpen] = useState<boolean>(true);
 
   useEffect(() => {
-    const ls = localStorage.getItem('header-dropdown');
-    if (ls !== null && ls !== '') {
-      setDropdownShow(JSON.parse(ls));
+    if (document.body.clientWidth < 680) {
+      setNavOpen(false);
     }
   }, []);
-
-  const setDropdownOpposite = (changer, state) => {
-    if (document.body.clientWidth < 680) {
-      if (state.display === 'block') {
-        changer({ display: 'none' });
-        localStorage.setItem(
-          'header-dropdown',
-          JSON.stringify({ display: 'none' }),
-        );
-      } else {
-        changer({ display: 'block' });
-        localStorage.setItem(
-          'header-dropdown',
-          JSON.stringify({ display: 'block' }),
-        );
-      }
-    }
-  };
 
   const listElements: HeaderElement[] = [
     {
@@ -93,18 +69,13 @@ const Header = ({ active }: HeaderProps) => {
 
   return (
     <div className={style.container}>
-      <div className={style.imgBox}>
-        <IntImg src="/me4.jpeg" width={60} height={60} />
-      </div>
       <FontAwesomeIcon
         className={style.dropdown}
-        onClick={() => setDropdownOpposite(setDropdownShow, dropdownShow)}
+        onClick={() => setNavOpen(!navOpen)}
         icon={faBars}
       />
       <div
-        className={`${style.linkBox} ${
-          dropdownShow.display === 'block' ? style.openDropdown : ''
-        }`}
+        className={`${style.linkBox} ${navOpen ? `${style.openDropdown}` : ''}`}
       >
         {listElements.map((element) => (
           <div
@@ -112,9 +83,11 @@ const Header = ({ active }: HeaderProps) => {
               active === element.name ? style.active : ''
             }`}
             key={element.link}
-            style={dropdownShow}
+            style={{display: navOpen ? 'block' : 'none'}}
             onClick={() => {
-              setDropdownOpposite(setDropdownShow, dropdownShow);
+              if (document.body.clientWidth <= 680) {
+                setNavOpen(false);
+              }
               router.push(element.link);
             }}
           >
