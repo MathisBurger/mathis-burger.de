@@ -53,7 +53,7 @@ const Home = () => {
         <section className={`${style.section} ${style.first}`}>
           <h2>About me</h2>
           <div className={style.split}>
-              <img src="/me2.JPG" style={{ height: '20vw' }} />
+              <img src="/me2.JPG" />
             <p>
               Hey, I am Mathis Burger, a german CS student and fullstack
               software engineer from Germany. I started programming back in 2019

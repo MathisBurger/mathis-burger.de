@@ -125,7 +125,7 @@
 }
 
 .section {
-  width: 80vw;
+  width: 85vw;
   padding-right: 10.5vw;
   padding-left: 10.5vw;
   display: flex;
@@ -135,10 +135,27 @@
   padding-bottom: 1em;
 }
 
+.section:last-child {
+  padding-bottom: 85px;
+}
+
 .section .split {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
   gap: 5vw;
+}
+
+.section .split img {
+  max-width: 15vw;
+  object-fit: contain;
+}
+
+.section .split p {
+  min-width: 30vw;
+  max-width: 70%;
 }
 
 .section .tools {
@@ -204,5 +221,15 @@
 @media only screen and (max-width: 460px) {
   .container h1 {
     font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .container .section .split p {
+    min-width: 70vw;
+  }
+  .container .section .split img {
+    height: 35vh;
+    min-width: 100%;
   }
 }
