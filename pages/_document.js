@@ -15,6 +15,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script defer data-domain="mathis-burger.de" src="https://analytics.mathis-burger.de/js/script.js"></script>
       </body>
     </Html>
   );
