@@ -280,6 +280,12 @@ const Projects = () => {
       name: 'CodeCanvas',
       description: 'A platform to learn how to code',
     },
+    {
+      url: 'https://github.com/MathisBurger/BetTogether',
+      languages: [Language.php],
+      name: 'BetTogether',
+      description: 'A platform to place some bets with your friends.',
+    },
   ];
   return (
     <Wrapper>

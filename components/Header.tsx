@@ -63,7 +63,7 @@ const Header = ({ active }: HeaderProps) => {
     {
       name: 'blog',
       label: 'Blog',
-      link: '/blog',
+      link: 'https://blog.mathis-burger.de',
     },
   ];
 
