@@ -37,11 +37,17 @@ const CV = () => {
                   </p>
                 </div>
                 <div className={`${style.dataRow} ${style.extended}`}>
+                  <h3>Internship Baureihe Steuerung Prozess- / Projektmanagement</h3>
+                  <h5>AUDI AG | Aug. 2024 - Sep. 2024</h5>
+                  <p>
+                    Assistant Product Owner of a web platform. 
+                  </p>
+                </div>
+                <div className={`${style.dataRow} ${style.extended}`}>
                   <h3>Internship Baureihe Digitalisierung / E³ 1.2</h3>
                   <h5>AUDI AG | Aug. 2024 - Sep. 2024</h5>
                   <p>
-                    Helped with small tasks in controlling of E³ 1.2 architecture. Furthermore, I helped other people with
-                    questions regarding technical terms and tickets.
+                    Helped with small tasks in controlling of E³ 1.2 architecture.
                   </p>
                 </div>
                 <div className={`${style.dataRow} ${style.extended}`}>
