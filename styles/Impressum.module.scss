@@ -12,12 +12,28 @@
   align-items: center;
   align-content: center;
   padding-bottom: 2em;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: 100vh;
   gap: 10px;
 }
 .container h1 {
   margin-top: 5em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.container h2 {
+  margin-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.container h3 {
+  margin-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.container h4 {
+  margin-top: 1em;
   font-family: 'Roboto', sans-serif;
   color: white;
 }

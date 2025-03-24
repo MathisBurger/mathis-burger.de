@@ -17,6 +17,9 @@ const Footer: React.FC = () => {
         <Link href="/impressum" style={{ textDecoration: 'none' }}>
           <p>Impressum</p>
         </Link>
+        <Link href="/privacy" style={{ textDecoration: 'none' }}>
+          <p>Datenschutz</p>
+        </Link>
       </div>
     </footer>
   );
