@@ -407,54 +407,6 @@ const PrivacyPage = () => {
           </a>
           .
         </p>
-        <h3>Fehlerreporting und Monitoring: Sentry</h3>
-        <p>
-          Um den fehlerfreien Betrieb unserer Dienste sicherzustellen und beim
-          Auftreten von Fehlern schnellstmöglich reagieren zu können, nutzen wir
-          den Dienst Sentry. Über Sentry werden server- oder clientseitig
-          auftretende Fehler automatisch erfasst und an uns gemeldet. Dabei
-          achten wir darauf, dass personenbezogene Daten weitmöglich entfernt
-          werden. In speziellen Fällen ist nicht auszuschließen, dass eine
-          Fehlermeldung auch personenbezogene Daten enthält, z.B. wenn der
-          Fehler in Zusammenhang mit einer Nutzereingabe auftritt. Sentry ist
-          ein Dienst der <br />
-          Functional Software Inc.
-          <br /> 132 Hawthorne Street <br /> San Francisco <br /> California
-          94107 <br /> USA
-          <br /> (im Folgenden „Sentry”). Die Vereinbarung zur
-          Auftragsdatenverarbeitung (Data Processing Agreement) von Sentry
-          können Sie unter folgendem Link nachlesen:{' '}
-          <a href="https://sentry.io/legal/dpa/">
-            https://sentry.io/legal/dpa/
-          </a>{' '}
-          Die Datenschutzerklärung von Sentry können Sie unter folgendem Link
-          nachlesen:{' '}
-          <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a>{' '}
-          Ein Auftragsdatenverarbeitungsvertrag mit Sentry wurde abgeschlossen.
-          Darin wird Sentry auch bei einer möglichen Datenverarbeitung in
-          Drittländern (z.B. durch Wartungsarbeiten) mit Hilfe der
-          EU-Standardvertragsklauseln zur Einhaltung des EU-Datenschutzniveaus
-          verpflichtet. Die Datenverarbeitung erfolgt auf Grundlage unseren
-          berechtigten Interessen (§ 6 Nr. 8 DSG-EKD) an der technisch
-          fehlerfreien und optimierten Bereitstellung unserer Dienste. Die von
-          Sentry erfassten Fehler werden in der Google Cloud Platform der Firma{' '}
-          <br />
-          Google LLC <br /> 1600 Amphitheatre Parkway <br /> Mountain View, CA
-          94043 <br /> USA <br /> (im Folgenden „Google Cloud Platform”)
-          gespeichert. Die Rechenzentren der Google Cloud Platform sind unter
-          anderem nach SOC 2 Type II, ISO/IEC 27001 und PCI-DSS zertifiziert.
-          Die Hinweise zur Datenverarbeitung und Sicherheit (Data Processing and
-          Security Terms) der Google Cloud Platform können Sie unter folgendem
-          Link nachlesen:{' '}
-          <a href="https://cloud.google.com/terms/data-processing-terms">
-            https://cloud.google.com/terms/data-processing-terms
-          </a>{' '}
-          Die Datenschutzerklärung der Google Cloud Platform können Sie unter
-          folgendem Link nachlesen:
-          <a href="https://cloud.google.com/terms/cloud-privacy-notice">
-            https://cloud.google.com/terms/cloud-privacy-notice
-          </a>
-        </p>
       </div>
       <Footer />
     </Wrapper>
