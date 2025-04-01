@@ -17,7 +17,7 @@ const CV = () => {
             <h2>Mathis Burger</h2>
             <div className={style.kv}>
               <p>Age:</p>
-              <p>19</p>
+              <p>20</p>
             </div>
             <div className={style.kv}>
               <p>Contact:</p>
