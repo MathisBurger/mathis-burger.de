@@ -12,7 +12,7 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footerContainer}>
-      <p>©2024 Mathis Burger</p>
+      <p>©{new Date().getFullYear()} Mathis Burger</p>
       <div className={styles.extraLinks}>
         <Link href="/impressum" style={{ textDecoration: 'none' }}>
           <p>Impressum</p>
