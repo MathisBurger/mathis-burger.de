@@ -5,24 +5,16 @@ import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
 import IntImg from '../components/IntImg';
-import Link from 'next/link';
+import JourneyPath from '../components/journey';
 
 /**
  * The index page that sows some general content of the page.
  */
 const Home = () => {
-  const [mainText, setMainText] = useState<string>('');
-
   const [noAnimation, setNoAnimation] = useState<boolean>(false);
 
   useEffect(() => {
     setNoAnimation(getCookie('animate-index') === 'true');
-  }, []);
-
-  useEffect(() => {
-    fetch('/mainText.txt')
-      .then((res) => res.text())
-      .then((txt) => setMainText(txt));
   }, []);
 
   useEffect(() => {
@@ -46,7 +38,6 @@ const Home = () => {
         <p className={style.subtitle}>
           A fullstack software engineer from Germany.
         </p>
-        {/* <p>{mainText === '' ? <LoadingSpinner/> : mainText}</p> */}
         <svg className={style.arrows}>
           <path className={style.a1} d="M0 0 L30 32 L60 0"></path>
           <path className={style.a2} d="M0 20 L30 52 L60 20"></path>
@@ -57,39 +48,41 @@ const Home = () => {
           <div className={style.split}>
             <img src="/me2.JPG" />
             <p>
-              Hey, I am Mathis Burger, a german CS student and fullstack
-              software engineer from Germany. I started programming back in 2019
-              during my time in school. This was also the first time I got in
-              touch with computers. After that I started to get obsessed with
-              this stuff and got really deep into coding. I really love the
-              fields of cyber security and enterprise applications. Due to my
-              deep interest into cars I am also very into V2X and in-car
-              software. I also love to play around with event technology and
-              everything that has to to with electronics. I love to make my live
-              easier by automating certain tasks in my daily live. In Addition
-              to that I really like to try out new trends and technologies in
-              software development.
-              <br />
-              In my free time I love to have some fun with my friends or learn
-              new things that are useful to my career and my overall life. I
-              like the idea of getting every day a little bit better in what I
-              am doing and therefore, I also take some time to learn new things
-              and improve myself.
+              I am {new Date().getFullYear() - 2005} years old. I am currently
+              living in Bavaria, Germany working as a corporate student at AUDI
+              AG and fullstack software engineer at NetzWerkstatt GmbH & Co.KG.
+              I love to learn new stuff and share my knowledge with others.
+              Currently I am getting into complexity theory and algorithms.
+              Furthermore, I am pursuing a bachelor's degree in business
+              information systems. And I like finance. And traveling. And all
+              the other normal people stuff.
             </p>
+          </div>
+        </section>
+        <section className={style.section}>
+          <h2>My journey</h2>
+          <div className={`${style.split} ${style.reverse}`}>
+            <p>
+              I started programming at the age of 14. I did some personal
+              projects, mostly minecraft server plugins. At the age of 16, I
+              started working as a software developer at NetzWerkstatt GmbH &
+              Co.KG aside from school. After I graduated from school I moved to
+              Bavaria to pursue my bachelor's degree in business information
+              systems in cooperation with the AUDI AG, which is what I currently
+              do.
+            </p>
+            <JourneyPath />
           </div>
         </section>
         <section className={style.section}>
           <h2>Work Experience</h2>
           <p>
-            If you are interested into my detailed career path, you can take a
-            look at my <Link href="/cv">CV page</Link>.<br />
-            At the page of 16 I got my first side job as a fullstack software
-            engineer. I worked on some big projects using PHP and React. After I
-            turned 18 I quitted this job and moved to Bavaria to participate in
-            the dual studies program of the german car manufacturer Audi. After
-            the first semester I started to work as a fullstack software
-            engineer at the same company as before alongside to my studies in
-            Business Information Systems.
+            As already mentioned I got my first job at the age of 16 at
+            NetzWerkstatt GmbH & Co.KG. Then I started to work as a corporate
+            student at AUDI AG. After the first semester I started to work as a
+            fullstack software engineer at NetzWerkstatt GmbH & Co.KG again.
+            During my time at Audi I had many different internships in vehicle
+            project management, complexity management and software engineering.
           </p>
         </section>
         <section className={style.section}>

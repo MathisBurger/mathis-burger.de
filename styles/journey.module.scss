@@ -1,0 +1,35 @@
+.journeyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.journeySvg {
+  width: 100%;
+  max-width: 48rem;
+  overflow: visible;
+}
+
+.motionCar {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  offset-rotate: auto;
+  will-change: offset-distance;
+}
+
+.pathBase {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+
+.pathAnimated {
+  fill: none;
+  stroke: #bb9af7;
+  stroke-width: 3;
+  stroke-linecap: round;
+}

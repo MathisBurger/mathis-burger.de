@@ -20,6 +20,11 @@ svg {
   color: #a9b1d6;
 }
 
+*::selection {
+  background-color: #bb9af7;
+  color: white;
+}
+
 h1,
 h2 {
   color: #bb9af7;
