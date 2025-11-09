@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background: #161616;
+  background: #0f1019;
   position: absolute;
   left: 0;
   top: 0;
@@ -16,12 +16,10 @@
   padding-top: 1.5em;
   text-align: center;
   font-size: 4em;
-  color: white;
 }
 .container h3 {
   text-align: center;
   font-size: 1.5em;
-  color: white;
 }
 
 .projectBox {
@@ -36,10 +34,12 @@
   width: 30%;
   min-height: 200px;
   height: fit-content;
-  background: #262626;
-  border-radius: 5px;
-  margin: 10px 10px 10px 10px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+  background: #0f1019;
+  border-radius: 2px;
+  border: 1px solid #49519a;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   display: flex;
   flex-direction: column;
@@ -53,13 +53,11 @@
 
 .projectCard h2 {
   text-align: center;
-  color: white;
   font-size: 1.6em;
 }
 
 .projectCard p {
   text-align: center;
-  color: white;
   margin: 2px;
 }
 

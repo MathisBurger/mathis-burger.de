@@ -5,7 +5,7 @@ import Wrapper from '../components/Wrapper';
 import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
 import IntImg from '../components/IntImg';
-import Link from "next/link";
+import Link from 'next/link';
 
 /**
  * The index page that sows some general content of the page.
@@ -43,7 +43,9 @@ const Home = () => {
         <h1>
           Welcome! I am <span>Mathis Burger</span>
         </h1>
-        <p>A fullstack software engineer from Germany.</p>
+        <p className={style.subtitle}>
+          A fullstack software engineer from Germany.
+        </p>
         {/* <p>{mainText === '' ? <LoadingSpinner/> : mainText}</p> */}
         <svg className={style.arrows}>
           <path className={style.a1} d="M0 0 L30 32 L60 0"></path>
@@ -53,7 +55,7 @@ const Home = () => {
         <section className={`${style.section} ${style.first}`}>
           <h2>About me</h2>
           <div className={style.split}>
-              <img src="/me2.JPG" />
+            <img src="/me2.JPG" />
             <p>
               Hey, I am Mathis Burger, a german CS student and fullstack
               software engineer from Germany. I started programming back in 2019

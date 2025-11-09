@@ -33,7 +33,6 @@
 .container h1 {
   padding-top: 40vh;
   width: 80%;
-  color: white;
   font-size: 3.5em;
   text-align: center;
   animation-fill-mode: forwards;
@@ -43,6 +42,7 @@
   top: 20px;
   position: relative;
   margin-bottom: 0;
+  color: white;
 }
 .container h1 span {
   color: rgb(33, 150, 243);
@@ -54,8 +54,11 @@
   animation-delay: 0s !important;
 }
 
-.container p {
+.subtitle {
   color: white;
+}
+
+.container p {
   text-align: center;
   width: 80%;
   font-size: 1.5em;
@@ -143,7 +146,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #161616;
+  background: #0f1019;
   padding-bottom: 1em;
 }
 
@@ -190,7 +193,6 @@
 }
 
 .section h2 {
-  color: white;
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;

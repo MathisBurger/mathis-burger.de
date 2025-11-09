@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #161616;
+  background-color: #0f1019;
 }
 
 .container {
@@ -30,7 +30,6 @@
   padding-top: 1.5em;
   text-align: center;
   font-size: 4em;
-  color: white;
 }
 
 .blogElement {
@@ -66,12 +65,8 @@
   place-items: center;
   grid-template-rows: 25% 75%;
 }
-.blogElement .rightGrid h2 {
-  color: white;
-}
 }
 .blogElement .rightGrid p {
-  color: white;
   text-wrap: normal;
   padding: 0;
   padding-left: 20px;
