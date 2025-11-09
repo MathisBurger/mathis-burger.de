@@ -53,7 +53,7 @@ const Home = () => {
               AG and fullstack software engineer at NetzWerkstatt GmbH & Co.KG.
               I love to learn new stuff and share my knowledge with others.
               Currently I am getting into complexity theory and algorithms.
-              Furthermore, I am pursuing a bachelor's degree in business
+              Furthermore, I am pursuing a bachelor&apos;s degree in business
               information systems. And I like finance. And traveling. And all
               the other normal people stuff.
             </p>
@@ -67,9 +67,9 @@ const Home = () => {
               projects, mostly minecraft server plugins. At the age of 16, I
               started working as a software developer at NetzWerkstatt GmbH &
               Co.KG aside from school. After I graduated from school I moved to
-              Bavaria to pursue my bachelor's degree in business information
-              systems in cooperation with the AUDI AG, which is what I currently
-              do.
+              Bavaria to pursue my bachelor&apos;s degree in business
+              information systems in cooperation with the AUDI AG, which is what
+              I currently do.
             </p>
             <JourneyPath />
           </div>
