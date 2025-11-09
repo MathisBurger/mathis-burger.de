@@ -13,3 +13,7 @@ svg {
   width: auto;
   height: auto;
 }
+@import 'jetbrains.scss';
+* {
+  font-family: 'Jetbrains Mono', monospace;
+}

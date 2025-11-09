@@ -21,7 +21,6 @@ $navboxHeight: 60px;
   padding: 2px;
 }
 
-
 .navBox {
   width: 150px;
   height: $navboxHeight;
@@ -29,7 +28,6 @@ $navboxHeight: 60px;
   color: white;
   font-size: 30px;
   line-height: $navboxHeight;
-  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   display: block;
   background-size: 100% 200%;
@@ -98,7 +96,7 @@ $navboxHeight: 60px;
   .openDropdown {
     animation-name: dropdownAnimation;
     animation-fill-mode: forwards;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
   }
   .navBox {
     width: 45vw;
@@ -109,7 +107,7 @@ $navboxHeight: 60px;
     color: white;
     position: relative;
     height: 40px;
-    line-height: 40px
+    line-height: 40px;
   }
   .active {
     color: white;
