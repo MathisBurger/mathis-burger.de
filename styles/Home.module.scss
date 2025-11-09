@@ -1,5 +1,6 @@
 .bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('../public/coding.jpg'), url('../public/grandma3.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
+    url('../public/coding.jpg'), url('../public/grandma3.jpeg');
   background-position: top left, bottom right;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -30,10 +31,8 @@
 }
 
 .container h1 {
-  font-family: 'Roboto', sans-serif;
   padding-top: 40vh;
   width: 80%;
-  color: white;
   font-size: 3.5em;
   text-align: center;
   animation-fill-mode: forwards;
@@ -43,10 +42,11 @@
   top: 20px;
   position: relative;
   margin-bottom: 0;
+  color: white;
 }
 .container h1 span {
-  color: rgb(33, 150, 243);
-  filter: drop-shadow(rgb(0, 119, 255) 0px 0px 12px);
+  color: #a988f0;
+  filter: drop-shadow(0 0 8px #a57ef5);
 }
 
 .container.noAnimation h1 {
@@ -54,9 +54,11 @@
   animation-delay: 0s !important;
 }
 
-.container p {
-  font-family: 'Roboto', sans-serif;
+.subtitle {
   color: white;
+}
+
+.container p {
   text-align: center;
   width: 80%;
   font-size: 1.5em;
@@ -75,7 +77,6 @@
   animation-delay: 0s !important;
 }
 
-
 .arrows {
   width: 60px;
   height: 72px;
@@ -93,35 +94,49 @@
   -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
 }
 
 .arrows path.a3 {
-  animation-delay:0s;
-  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
 
 .section {
@@ -131,7 +146,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #161616;
+  background: #0f1019;
   padding-bottom: 1em;
 }
 
@@ -143,9 +158,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 5vw;
+}
+
+.section .split.reverse p {
+  width: 80%;
 }
 
 .section .split img {
@@ -178,8 +197,6 @@
 }
 
 .section h2 {
-  font-family: 'Roboto', sans-serif;
-  color: white;
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
@@ -195,7 +212,6 @@
     padding-bottom: 3em;
   }
 }
-
 
 @keyframes imageAnimation {
   0% {

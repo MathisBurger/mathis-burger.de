@@ -16,10 +16,9 @@
 
 .container.dark {
   color: white;
-  background-color: #161616;
+  background-color: #0f1019;
 }
 .container h1 {
-  font-family: 'Roboto', sans-serif;
   font-size: 3em;
   padding: 0;
   margin: 0;
@@ -31,7 +30,6 @@
   border-radius: 5px;
   background-color: #0074ec;
   color: #e5e2e2;
-  font-family: 'Roboto', sans-serif;
   box-shadow: 1px 1px 1px rgba(0, 116, 236, 0.5);
 }
 
@@ -44,7 +42,6 @@
   width: auto;
 }
 .container p {
-  font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
 @media only screen and (max-width: 680px) {

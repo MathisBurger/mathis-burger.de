@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  background: #161616;
+  background: #0f1019;
   position: absolute;
   left: 0;
   top: 0;
@@ -20,8 +20,6 @@
   padding-top: 1.5em;
   text-align: center;
   font-size: 4em;
-  color: white;
-  font-family: 'Roboto', sans-serif;
 }
 
 .container .box {
@@ -38,14 +36,16 @@
 .container .box .elementBox {
   width: 200px;
   height: 200px;
-  background: #262626;
   border-radius: 5px;
+  border: 1px solid #49519a;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   display: grid;
   place-items: center;
   transition: 0.3s;
 }
 .container .box .elementBox:hover {
-  filter: brightness(1.6);
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
 }
 .container .box .elementBox img {
   width: 150px;

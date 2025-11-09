@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import style from '../styles/Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 interface HeaderProps {
   /**
    * The active route in the header
@@ -68,34 +69,19 @@ const Header = ({ active }: HeaderProps) => {
   ];
 
   return (
-    <div className={style.container}>
-      <FontAwesomeIcon
-        className={style.dropdown}
-        onClick={() => setNavOpen(!navOpen)}
-        icon={faBars}
-      />
-      <div
-        className={`${style.linkBox} ${navOpen ? `${style.openDropdown}` : ''}`}
-      >
-        {listElements.map((element) => (
-          <div
-            className={`${style.navBox} ${
-              active === element.name ? style.active : ''
-            }`}
-            key={element.link}
-            style={{display: navOpen ? 'block' : 'none'}}
-            onClick={() => {
-              if (document.body.clientWidth <= 680) {
-                setNavOpen(false);
-              }
-              router.push(element.link);
-            }}
-          >
-            {element.label}
-          </div>
-        ))}
+    <header className={style.header}>
+      <div className={style.logo}>Mathis Burger</div>
+      <div className={style.menuToggle}>
+        <FontAwesomeIcon onClick={() => setNavOpen(!navOpen)} icon={faBars} />
       </div>
-    </div>
+      <nav id="nav" className={`${style.nav} ${navOpen ? style.open : ''}`}>
+        {listElements.map((el) => (
+          <Link href={el.link} key={el.name}>
+            {el.label}
+          </Link>
+        ))}
+      </nav>
+    </header>
   );
 };
 
