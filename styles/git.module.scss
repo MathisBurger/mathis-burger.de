@@ -12,6 +12,16 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .clBox {
+    width: 70% !important;
+  }
+  .chart {
+    grid-template-columns: repeat(53, 20px) !important; /* 53 weeks */
+    overflow: scroll;
+  }
+}
+
 .clBox {
   display: flex;
   flex-direction: column;

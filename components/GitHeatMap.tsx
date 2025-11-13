@@ -74,14 +74,7 @@ const GitHeatMap = () => {
             <p>{criterion.replaceAll('_', ' ')}</p>
             <h2>{getTotal(criterion)}</h2>
 
-            <ul
-              style={{
-                listStyle: 'none',
-                padding: 0,
-                marginTop: '1em',
-                fontSize: '0.9em',
-              }}
-            >
+            <ul>
               {Object.entries(data.by_source_total).map(([source, values]) => (
                 <li key={source}>
                   {source}: {values[criterion]}
