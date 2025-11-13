@@ -132,6 +132,10 @@
   text-transform: capitalize;
 }
 
+.elementBox ul li {
+  text-transform: capitalize;
+}
+
 .elementBox:hover {
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.6);
   transform: scale(1.02);
