@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
 import IntImg from '../components/IntImg';
 import JourneyPath from '../components/journey';
-import GitHeatMap from '../components/GitHeatmap';
+import GitHeatMap from '../components/GitHeatMap';
 
 /**
  * The index page that sows some general content of the page.
