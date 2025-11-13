@@ -91,26 +91,28 @@ const GitHeatMap = () => {
           </div>
         ))}
       </div>
-      <div className={style.chart}>
-        {days.map((day) => (
-          <Day
-            key={day.date}
-            date={day.date}
-            count={day.count}
-            sources={day.sources}
-          />
-        ))}
-      </div>
-      <div className={style.legend}>
-        {colors.map((color, idx) => (
-          <div key={idx} className={style.legendItem}>
-            <div
-              className={style.legendColor}
-              style={{ backgroundColor: color }}
+      <div className={style.clBox}>
+        <div className={style.chart}>
+          {days.map((day) => (
+            <Day
+              key={day.date}
+              date={day.date}
+              count={day.count}
+              sources={day.sources}
             />
-            <span>{idx === 6 ? '6+' : idx}</span>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className={style.legend}>
+          {colors.map((color, idx) => (
+            <div key={idx} className={style.legendItem}>
+              <div
+                className={style.legendColor}
+                style={{ backgroundColor: color }}
+              />
+              <span>{idx === 6 ? '6+' : idx}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
