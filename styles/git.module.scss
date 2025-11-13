@@ -14,7 +14,7 @@
 
 @media only screen and (max-width: 768px) {
   .clBox {
-    width: 70% !important;
+    width: 85% !important;
   }
   .chart {
     grid-template-columns: repeat(53, 20px) !important; /* 53 weeks */
@@ -75,6 +75,7 @@
     pointer-events: none;
     z-index: 10;
     text-transform: capitalize;
+    overflow: visible !important;
   }
 }
 
