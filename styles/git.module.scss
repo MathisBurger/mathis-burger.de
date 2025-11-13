@@ -4,10 +4,11 @@
   align-items: center;
   width: fit-content;
   width: 90%;
+  overflow: visible;
 }
 
 .chartWrapper {
-  overflow-x: auto;
+  overflow-x: visible;
   overflow-y: visible;
   width: 100%;
 }
@@ -26,6 +27,9 @@
     background-color: #0f1019; /* track background */
     border-radius: 6px;
   }
+  .chartWrapper {
+    overflow-x: scroll;
+  }
 }
 
 .clBox {
@@ -34,6 +38,7 @@
   align-items: center;
   width: fit-content;
   width: 80%;
+  overflow: visible;
 }
 
 .chart {
