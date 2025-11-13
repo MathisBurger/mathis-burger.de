@@ -85,15 +85,17 @@ const GitHeatMap = () => {
         ))}
       </div>
       <div className={style.clBox}>
-        <div className={style.chart}>
-          {days.map((day) => (
-            <Day
-              key={day.date}
-              date={day.date}
-              count={day.count}
-              sources={day.sources}
-            />
-          ))}
+        <div className={style.chartWrapper}>
+          <div className={style.chart}>
+            {days.map((day) => (
+              <Day
+                key={day.date}
+                date={day.date}
+                count={day.count}
+                sources={day.sources}
+              />
+            ))}
+          </div>
         </div>
         <div className={style.legend}>
           {colors.map((color, idx) => (
