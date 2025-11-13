@@ -1,0 +1,136 @@
+.overallContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  width: 70%;
+}
+
+@media only screen and (max-width: 930px) {
+  .overallContainer {
+    width: 90%;
+  }
+}
+
+.chart {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(53, 1fr); /* 53 weeks */
+  gap: 2px;
+  width: 100%;
+}
+.dayWrapper {
+  position: relative;
+
+  .day {
+    border-radius: 2px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    width: inherit;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .day:hover {
+    outline: 1px solid #333;
+  }
+
+  // optional: fancier tooltip
+  .day:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    white-space: pre; // preserves line breaks
+    background: #1a1a2e;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+
+.legend {
+  display: flex;
+  justify-content: center; // center the legend
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 16px;
+
+  .legendItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4px;
+
+    .legendColor {
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      margin-bottom: 2px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.box {
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.elementBox {
+  width: 200px;
+  min-height: 200px;
+  border-radius: 5px;
+  border: 1px solid #49519a;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  display: grid;
+  place-items: center;
+  transition: 0.3s;
+  background-color: #1a1b2b; // subtle background for better contrast
+}
+
+.elementBox p {
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.elementBox h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.elementBox ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.elementBox:hover {
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+}
+
+.elementBox ul {
+  margin-top: 0.5em;
+  padding-left: 0;
+  list-style: none;
+}

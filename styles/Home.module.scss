@@ -147,11 +147,7 @@
   justify-content: center;
   flex-direction: column;
   background: #0f1019;
-  padding-bottom: 1em;
-}
-
-.section:last-child {
-  padding-bottom: 85px;
+  padding-bottom: 48px;
 }
 
 .section .split {
@@ -170,6 +166,7 @@
 .section .split img {
   max-width: 15vw;
   object-fit: contain;
+  height: 75%;
 }
 
 .section .split p {
@@ -205,6 +202,7 @@
 .section p {
   width: 100%;
   text-align: left;
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 770px) {

@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { getCookie, setCookie } from 'typescript-cookie';
 import IntImg from '../components/IntImg';
 import JourneyPath from '../components/journey';
+import GitHeatMap from '../components/GitHeatmap';
 
 /**
  * The index page that sows some general content of the page.
@@ -58,6 +59,10 @@ const Home = () => {
               the other normal people stuff.
             </p>
           </div>
+        </section>
+        <section className={style.section} style={{ alignItems: 'center' }}>
+          <h2>Git contribution (last year)</h2>
+          <GitHeatMap />
         </section>
         <section className={style.section}>
           <h2>My journey</h2>
