@@ -92,7 +92,7 @@
 }
 
 .elementBox {
-  width: 200px;
+  width: 250px;
   min-height: 200px;
   border-radius: 5px;
   border: 1px solid #49519a;
@@ -105,7 +105,7 @@
 
 .elementBox p {
   font-size: 1.2em;
-  text-align: center;
+  text-align: center !important;
   text-transform: capitalize;
   padding: 0;
   margin-top: 2px;
