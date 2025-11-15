@@ -46,8 +46,9 @@ const GitHeatMap = () => {
   if (!data) return null;
 
   const year = new Date().getFullYear();
-  const firstDay = new Date(year, 0, 1);
-  const lastDay = new Date(year, 11, 31);
+  const firstDay = new Date();
+  firstDay.setFullYear(year - 1);
+  const lastDay = new Date();
 
   const days: SumUpDay[] = [];
   for (let d = new Date(firstDay); d <= lastDay; d.setDate(d.getDate() + 1)) {

@@ -48,6 +48,8 @@
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(53, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-auto-flow: column;
   gap: 2px;
   width: 100%;
   overflow: visible;
@@ -77,12 +79,10 @@
   outline: 1px solid #333;
 }
 
-.dayWrapper .day:hover::after {
-  content: attr(title);
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  transform: translateX(-50%);
+.popover {
+  display: block;
+  position: fixed;
+  transform: translateX(-50%) translateY(-100%);
   white-space: pre;
   background: #1a1a2e;
   color: #fff;

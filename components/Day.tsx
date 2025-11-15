@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import style from '../styles/git.module.scss';
 
 type DayProps = {
@@ -8,6 +8,10 @@ type DayProps = {
 };
 
 const Day: React.FC<DayProps> = ({ date, count, sources }) => {
+  const [hovered, setHovered] = useState(false);
+  const [popoverPos, setPopoverPos] = useState({ top: 0, left: 0 });
+  const dayRef = useRef<HTMLDivElement>(null);
+
   const getColor = (count: number) => {
     if (count === 0) return '#2b2c3d';
     if (count === 1) return '#6b57a1';
@@ -23,14 +27,47 @@ const Day: React.FC<DayProps> = ({ date, count, sources }) => {
     .map(([source, value]) => `${source}: ${value}`)
     .join('\n');
 
+  const fullContent = `${date}: ${count} contributions\n${tooltipContent}`;
+
+  const handleMouseEnter = () => {
+    if (dayRef.current) {
+      const rect = dayRef.current.getBoundingClientRect();
+      setPopoverPos({
+        left: rect.left + rect.width / 2,
+        top: rect.top,
+      });
+    }
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => setHovered(false);
+
   return (
-    <div className={style.dayWrapper}>
+    <>
       <div
-        className={style.day}
-        style={{ backgroundColor: getColor(count) }}
-        title={`${date}: ${count} contributions\n${tooltipContent}`}
-      />
-    </div>
+        className={style.dayWrapper}
+        ref={dayRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div
+          className={style.day}
+          style={{ backgroundColor: getColor(count) }}
+        />
+      </div>
+
+      {hovered && (
+        <div
+          className={style.popover}
+          style={{
+            left: popoverPos.left,
+            top: popoverPos.top - 8,
+          }}
+        >
+          {fullContent}
+        </div>
+      )}
+    </>
   );
 };
 
