@@ -1,4 +1,3 @@
-// GitHeatMap.tsx
 import { useEffect, useState } from 'react';
 import Day from './Day';
 import style from '../styles/git.module.scss';
@@ -85,18 +84,21 @@ const GitHeatMap = () => {
         ))}
       </div>
       <div className={style.clBox}>
-        <div className={style.chartWrapper}>
-          <div className={style.chart}>
-            {days.map((day) => (
-              <Day
-                key={day.date}
-                date={day.date}
-                count={day.count}
-                sources={day.sources}
-              />
-            ))}
+        <div className={style.chartOuter}>
+          <div className={style.chartScroll}>
+            <div className={style.chart}>
+              {days.map((day) => (
+                <Day
+                  key={day.date}
+                  date={day.date}
+                  count={day.count}
+                  sources={day.sources}
+                />
+              ))}
+            </div>
           </div>
         </div>
+
         <div className={style.legend}>
           {colors.map((color, idx) => (
             <div key={idx} className={style.legendItem}>
