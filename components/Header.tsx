@@ -57,6 +57,11 @@ const Header = ({ active }: HeaderProps) => {
       link: '/cv',
     },
     {
+      name: 'gpg',
+      label: 'GPG keys',
+      link: '/gpg',
+    },
+    {
       name: 'socials',
       label: 'Socials',
       link: '/socials',
