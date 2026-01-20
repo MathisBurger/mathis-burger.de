@@ -94,12 +94,8 @@ const Home = () => {
           <h2>Tools I work with</h2>
           <div className={style.tools}>
             <IntImg src="/tools/actions.svg" />
-            <IntImg src="/tools/angular.svg" />
             <IntImg src="/tools/aws.svg" />
-            <IntImg src="/tools/csharp.svg" />
             <IntImg src="/tools/docker.svg" />
-            <IntImg src="/tools/dotnet.svg" />
-            <IntImg src="/tools/google-cloud.svg" />
             <IntImg src="/tools/go.svg" />
             <IntImg src="/tools/jira.svg" />
             <IntImg src="/tools/kotlin.svg" />
@@ -109,12 +105,9 @@ const Home = () => {
             <IntImg src="/tools/postgres.svg" />
             <IntImg src="/tools/react.svg" />
             <IntImg src="/tools/rust.svg" />
-            <IntImg src="/tools/swift.svg" />
             <IntImg src="/tools/symfony.svg" />
             <IntImg src="/tools/terraform.svg" />
             <IntImg src="/tools/typescript.svg" />
-            <IntImg src="/tools/svelte.svg" />
-            <IntImg src="/tools/vue-js.svg" />
             <IntImg src="/tools/confluence.svg" />
             <IntImg src="/tools/gitlab.svg" />
             <IntImg src="/tools/mongodb-original.svg" />
