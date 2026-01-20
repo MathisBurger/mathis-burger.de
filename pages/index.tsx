@@ -103,6 +103,7 @@ const Home = () => {
             <IntImg src="/tools/mariadb.svg" />
             <IntImg src="/tools/php.svg" />
             <IntImg src="/tools/postgres.svg" />
+            <IntImg src="/tools/csharp.svg" />
             <IntImg src="/tools/react.svg" />
             <IntImg src="/tools/rust.svg" />
             <IntImg src="/tools/symfony.svg" />
