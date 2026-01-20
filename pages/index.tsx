@@ -111,6 +111,8 @@ const Home = () => {
             <IntImg src="/tools/typescript.svg" />
             <IntImg src="/tools/confluence.svg" />
             <IntImg src="/tools/gitlab.svg" />
+            <IntImg src="/tools/java.png" />
+            <IntImg src="/tools/spring-boot.svg" />
             <IntImg src="/tools/mongodb-original.svg" />
             <IntImg src="/tools/redis-plain.svg" />
             <IntImg src="/tools/jetbrains-toolbox.svg" />
