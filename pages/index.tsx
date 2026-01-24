@@ -49,7 +49,7 @@ const Home = () => {
           <div className={style.split}>
             <img src="/me2.JPG" />
             <p>
-              I am {new Date().getFullYear() - 2005} years old. I am currently
+              I am 20 years old. I am currently
               living in Bavaria, Germany working as a corporate student at AUDI
               AG and fullstack software engineer at NetzWerkstatt GmbH & Co.KG.
               I love to learn new stuff and share my knowledge with others.
