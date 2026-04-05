@@ -276,7 +276,7 @@ const Projects = () => {
     },
     {
       url: 'https://github.com/MathisBurger/CodeCanvas',
-      languages: [Language.rust, Language.typescript],
+      languages: [Language.rust, Language.typescript, Language.golang],
       name: 'CodeCanvas',
       description: 'A platform to learn how to code',
     },
@@ -285,6 +285,13 @@ const Projects = () => {
       languages: [Language.php],
       name: 'BetTogether',
       description: 'A platform to place some bets with your friends.',
+    },
+    {
+      url: 'https://github.com/MathisBurger/MusicalDesk',
+      languages: [Language.rust, Language.typescript, Language.nextjs],
+      name: 'MusicalDesk',
+      description:
+        'A management suite for school associations with ticketing, member administration and financial reporting.',
     },
   ];
   return (
